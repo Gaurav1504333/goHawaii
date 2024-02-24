@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="family.css">
+    <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
+    <title>Family Fun In Hawai'i</title>
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <ul>
+            <li><a href="#" onclick="togglemenu()" onmouseover="togglemenu()" onmouseout="menuout()" >Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()" onmouseover="togglemenu2()" onmouseout="menuout2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()" onmouseover="togglemenu3()" onmouseout="menuout3()">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="#" onclick="togglemenu4()" onmouseover="togglemenu4()" onmouseout="menuout4()">Plan Your Trip</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <div class="search">
+                <img src="search.png" alt="">
+            </div> -->
+        </ul>
+        <div class="sub-menu-wrap" id="sm" onmouseout="menuout()" >
+            <div class="sub-menu" >
+                <div class="sm" >
+                    <a href="" class="sml" id="top">Island Overview</a>
+                    <a href="" class="sml">Kaua'i</a>
+                    <a href="" class="sml">O'ahu</a>
+                    <a href="" class="sml">Moloka'I</a>
+                    <a href="" class="sml">Lana'i</a>
+                    <a href="" class="sml">Maui</a>
+                    <a href="" class="sml">Islands</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap2" id="sm2" onmouseout="menuout2()">
+            <div class="sub-menu2">
+                <div class="sm2" >
+                    <a href="" class="sm2" id="top">Experiences overview</a>
+                    <a href="" class="sm2">Adventure</a>
+                    <a href="" class="sm2">Culinary</a>
+                    <a href="" class="sm2">Eco-Tourism</a>
+                    <a href="" class="sm2">Family fun</a>
+                    <a href="" class="sm2">Golf</a>
+                    <a href="" class="sm2">Heritage Sites</a>
+                    <a href="" class="sm2">Relaxation & Romance</a>
+                    <a href="" class="sm2">Sightseeing</a>
+                    <a href="" class="sm2">Voluntourism</a>
+                    <a href="" class="sm2">Wedding & Honeymoon</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap3" id="sm3" onmouseout="menuout3()">
+            <div class="sub-menu3">
+                <div class="sm3">
+                    <a href="" class="sm3" id="top">Culture overview</a>
+                    <a href="" class="sm3">History</a>
+                    <a href="" class="sm3">Traditions</a>
+                    <a href="" class="sm3">Hula</a>
+                    <a href="" class="sm3">Music</a>
+                    <a href="" class="sm3">Luau</a>
+                    <a href="" class="sm3">Hawaiian Launguage</a>
+                    <a href="" class="sm3">Art</a>
+                    <a href="" class="sm3">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap4" id="sm4" onmouseout="menuout4()">
+            <div class="sub-menu4">
+                <div class="sm4">
+                    <a href="" class="sm4" id="top">Planning overview</a>
+                    <a href="" class="sm4">Safety</a>
+                    <a href="" class="sm4">Travel Tips</a>
+                    <a href="" class="sm4">Special Alert/Notices</a>
+                    <a href="" class="sm4">Weather</a>
+                    <a href="" class="sm4">FAQ</a>
+                    <a href="" class="sm4">International Travelers</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                let nb= document.querySelector("navbar");
+                nb.classList.toggle("sticky" , window.scrollY > 0);
+            })
+        </script>
+    </navbar>
+    <script>
+        let sm = document.getElementById("sm");
+        let sm2 = document.getElementById("sm2");
+        let sm3 = document.getElementById("sm3");
+
+
+        function togglemenu(){
+            sm.classList.toggle("om");
+        }
+        function menuout(){
+            sm.classList.toggle("omo");
+        }
+        function togglemenu2(){
+            sm2.classList.toggle("om2");
+        }
+        function menuout2(){
+            sm2.classList.toggle("omo2");
+        }
+        function togglemenu3(){
+            sm3.classList.toggle("om3");
+        }
+        function menuout3(){
+            sm3.classList.toggle("omo3");
+        }
+        function togglemenu4(){
+            sm4.classList.toggle("om4");
+        }
+        function menuout4(){
+            sm4.classList.toggle("omo4");
+        }
+    </script>
+
+
+    <div class="slider">
+        <div class="wrap">
+            <div class="content">
+                <h1>Family Activities in Hawaiʻi</h1>
+                <p>
+                    Ohana (family) is deeply important in Hawaiian culture, which makes our islands
+                    a welcoming destination for kids of all ages. From snorkeling and sandcastle 
+                    building on sun-soaked beaches to exploring volcanoes and sacred cultural sites, 
+                    the Hawaiian Islands are a natural playground you never outgrow. 
+                </p>
+                <p>
+                    Hawaiʻi is literally swimming with water-based activities. Kids can pet a 
+                    sea lion at Sea Life Park, learn to surf from a pro on Waikīkī Beach, and see 
+                    massive humpback whales splashing around during a whale-watching tour on Maui, 
+                    Molokaʻi or Lānaʻi. Snorkeling is a kid-approved activity all year long; popular 
+                    spots include the shallow, protected tide pools of Poʻipū Beach on Kauaʻi and the 
+                    island of Hawaiʻi’s Kona coast, where you can even swim with dolphins and manta rays.
+                </p>
+                <p>
+                    Beyond the beach, our amazing museums and natural attractions will bring you 
+                    closer to Hawaiʻi’s fascinating culture – and each other. Learn to dance the hula 
+                    at the Smith Family Garden Lūʻau, Polynesian Cultural Center and many other authentic 
+                    lūʻau on every island. Kids can watch planetarium shows and participate in lava 
+                    demonstrations at the Bishop Museum, or learn how Hawaiʻi’s early explorers navigated 
+                    to our shores by the stars at the ʻImiloa Astronomy Center. Or, let the little ones burn 
+                    off some energy at our national and state parks, lush gardens and green spaces – from hikes 
+                    through the clouds at ʻĪao Valley State Park to zipline adventures at Kualoa Ranch, a 
+                    filming location of Jurassic Park.
+                </p>
+                <p>
+                    If you’re staying at a hotel or resort, take advantage of keiki (children's) 
+                    programs that range from lei-making to scuba lessons. Aulani Resort brings Disney 
+                    magic to Oʻahu, with daily activities and pool parties with appearances by Mickey 
+                    and his friends. On the island of Hawaiʻi, Hilton Waikoloa Village boasts a lazy 
+                    river and sprawling saltwater lagoon that’s home to several dolphins; kids can 
+                    even shadow a dolphin trainer during their stay! More great family-friendly H
+                    awaiian hotels include Turtle Bay on Oʻahu, Grand Wailea and Kāʻanapali Beach 
+                    Hotel on Maui and Hilton Garden Inn Kauaʻi. Best of all, many resorts offer day 
+                    camps for kids that give parents some much-needed solo time. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="p2">
+        <h1>Family Fun on Island</h1>
+        <div class="gallery-wrap">
+            <img src="arrowr.png" alt="" id="backbtn">
+            <div class="gallery">
+                <div class="c">
+                    <div class="box1">
+                        <img src="fs1.png"> 
+                        <h4 class="h4">Kaua'i</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="fs2.png">
+                        <h4 class="h4">O'ahu</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="fs3.png"> 
+                        <h4 class="h4" id="h46">Moloka'i</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="fs4.png"> 
+                        <h4 class="h4" id="h42">Lana'i </h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="fs5.png"> 
+                        <h4 class="h4" id="h45">Maui</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="fs6.png"> 
+                        <h4 class="h4" id="h43">Islands of hawaii</h4> 
+                    </div>
+                    <!-- <div class="box1">
+                        <img src="oa.jpg"> 
+                        <h4 class="h" id="oa">Outdoor Adventure</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="s.jpg"> 
+                        <h4 class="h" id="s">Shopping</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="hw.jpg"> 
+                        <h4 class="h" id="h">Health</h4> 
+                    </div> -->
+                </div> 
+            </div>
+            <img src="arrow.png" alt="" id="nextbtn">
+        </div>
+        <script>
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backbtn = document.getElementById("backbtn");
+            let nextbtn= document.getElementById("nextbtn");
+    
+            scrollContainer.addEventListener("wheel", (evt) =>{
+                evt.preventDefault();
+                scrollcontainer.scrollLeft+= evt.deltaY;
+            });
+            nextbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft+=1084;
+            });
+    
+            backbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft-=1084;
+            });   
+        </script>
+    </div>
+    <div id="divp7">
+        <section id="page7">
+            <div class="footer">
+                <div id="ptag">
+                    <p>Download Our App</p>
+                </div>
+                <div id="as">
+                    <img src="appstore.png" alt="appstore">
+                </div>
+                <div id="ps">
+                    <img src="playstore.png" alt="playstore">
+                </div>
+            </div>
+            <div class="f">
+                <div class="f1">
+                    <p>MEETINGS & CONVENTIONS</p>
+                    <p>TRAVEL TRADE</p>
+                    <p>MEDIA</p>
+                    <p>EVENTS & FESTIVALS </p>
+                    <p>OFFICIAL VISITORS' GUIDE</p>
+                </div>
+                <div class="f2">
+                    <p>CORPORATE INFORMATION</p>
+                    <p>TRAVELERS WITH DISABILITIES</p>
+                    <p>LGBTQ+</p>
+                    <p>TRAVEL TIPS</p>
+                </div>
+            </div>
+            <div class="tag">
+                <div>
+                    <p>#GOHAWAI'I</p>
+                </div>
+                <div>
+                    <img src="meta.png" id="meta" alt="meta">
+                </div>
+                <div>
+                    <img src="twitter.png" id="twitter" alt="twitter">
+                </div>
+            </div>
+            <div class="form">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <div class="input">
+                    <input type="email" placeholder="enter your email">Signup
+                </div>
+            </div>
+            <hr class="l2" >
+            <p id="l">© 2023 Hawai'i Tourism Authority</p>
+            <div class="fl">
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>Terms & Policy</p>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

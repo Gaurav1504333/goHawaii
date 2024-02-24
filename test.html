@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <section id="page4">
+        <div class="p4-wrap">
+            <img src="arrowr.png" alt="" id="backbtn2">
+            <div class="p4">
+                <div class="c">
+                    <div class="box1">
+                        <h1>Malama Hawaii</h1>
+                        <img src="mx1.jpg" class="main"> 
+                        <div id="cp4">
+                            <h2 >The Most Rewarding Trip Is One That Gives Back</h2>
+                            <p >The Hawaiian Islands itinerary that can change your life isn't 
+                            found in any guidebooks. Because what makes the Hawaiian Islands 
+                            truly special is not only our stunning natural beauty or our vibrant culture -
+                            it's the deeply rooted relationship that connects them.</p>
+                            <p >That relationship between people and place grows stronger every 
+                            time you mālama (give back). When you give back - to the land, 
+                            the ocean, the wildlife, the forest, the fishpond, the community - 
+                            you're part of a virtuous circle that enriches everything and 
+                            everyone. Including your experience as a visitor.</p>
+                            <p >Several organizations offer opportunities for visitors to pay
+                            it forward, like beach clean-ups, native tree planting, 
+                            and more. Engage in some of our volunteer opportunities below, 
+                            and in exchange, experiencfge Hawai'i on a much deeper and connected
+                            level. Through the Mālama Hawai'i Program, you could qualify for a 
+                            special discount or even a free night from a participating hotel when
+                            participating in its dedicated volunteer activity.</p>
+                        </div> 
+                    </div>
+                    <div class="box1">
+                        <h1>Annul Festivals & Events</h1>
+                        <img src="mx2.jpg"  class="main" id="events">
+                        <div id="cp4">
+                            <h2>The Festive Islands of Aloha</h2>
+                            <p >Dive deep into Hawai'i's local community and you'll discover a 
+                            culture alive with paniolo (cowboys), Chinese dragons, ethnic festivals, culinary events and an 
+                            exotic collection of celebrations.</p>
+                            <h2 >Annul Events</h2>
+                            <p >Many of Hawai'i's most memorable celebrations occur annually. 
+                            Some, like the Honolulu Marathon(December) and the Hawai'i International Film Festival (October), 
+                            draw visitors and participants from around the globe.</p>
+                            <h2 >food festivals</h2>
+                            <p >Events that feature local foods and agricultural products attract both locals and visitors. 
+                            The Hawai'i Food and Wine Festival on the islands of Hawai'i, Maui and O'ahu (October) and 
+                            the Kapalua Wine & Food Festival (June) on Maui are long-running culinary events, hosting 
+                            world-class chefs, winemakers and master sommeliers for thousands of wine and food lovers.</p>
+                        </div> 
+                    </div>
+                    <div class="box1">
+                        <h1>Art & Culture</h1>
+                        <img src="mx3.jpg" class="main"> 
+                        <div id="cp4">
+                            <h2 >Hawaiian Arts & Culture: The Expression of Aloha</h2>
+                            <p >The oldest of Hawaiian chants describe the Hawaiian Islands, 
+                            the spirits that inhabit them, the forces of nature that shaped them 
+                            and all the living things upon them as inextricably connected. This sense 
+                            of connection is the foundation of Hawaiian culture: understanding that we 
+                            all have a mandate to mālama, to care for our environment and for one another.</p>
+                            <p >Today, Hawaiian culture may hold many of the answers sought in a rapidly 
+                            changing world. The spirit of aloha – being in the presence of and sharing 
+                            the essence of life – teaches us lessons of peace, kindness, compassion and 
+                            responsibility to future generations. These lessons are expressed through chant, 
+                            music, hula, arts and cultural practices, and through the warm, genuine greetings 
+                            that are a hallmark of Hawaiian hospitality.</p>
+                        </div> 
+                    </div>
+                    <div class="box1">
+                        <h1>Hawai'i Regional Cuisine</h1>
+                        <img src="mx4.jpg" class="main" id="food"> 
+                        <div id="cp4">
+                            <h2 >Cuisine of Hawai'i</h2>
+                            <p >It's been said that a melting pot is not the most accurate way to describe 
+                            Hawai'i's multiethnic population. It's more like a stew, where all the flavors 
+                            complement and influence one another but the ingredients retain their richness and 
+                            integrity instead of melting into an even sameness. Nothing tells the story of arrival, 
+                            intermingling and reinvention of cultural traditions on the islands as deliciously as 
+                            the variety of cuisines that make Hawai'i a foodie wonderland. It all starts with Hawai's 
+                            first people, the Native Hawaiians.</p>
+                            <p >Stewards of an island chain in the middle of the Pacific Ocean, Native Hawaiians 
+                            knew how to live sustainably. They partitioned segments of each island into ahupua'a 
+                            (land divisions), where people were given the responsibility and privilege to manage 
+                            the resources in their portion of the mountains, lowlands or ocean. The Hawaiians had a 
+                            genius for engineering, constructing vast irrigation systems to supply water to terraced farms.</p>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <img src="arrow.png" alt="" id="nextbtn2">
+        </div>
+    </section>
+    <script>
+
+        let scrollContainer = document.querySelector(".p4");
+        let backbtn = document.getElementById("backbtn2");
+        let nextbtn= document.getElementById("nextbtn2");
+
+        scrollContainer.addEventListener("wheel", (evt) =>{
+            evt.preventDefault();
+            scrollcontainer.scrollLeft+= evt.deltaY;
+        });
+        nextbtn2.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior= "smooth";
+            scrollContainer.scrollLeft+=1160;
+        });
+
+        backbtn2.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior= "smooth";
+            scrollContainer.scrollLeft-=1160;
+        });    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawai'i Tourism</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <ul>
+            <li><a href="#" onclick="togglemenu()" onmouseover="togglemenu()" onmouseout="menuout()" >Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()" onmouseover="togglemenu2()" onmouseout="menuout2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()" onmouseover="togglemenu3()" onmouseout="menuout3()">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="#" onclick="togglemenu4()" onmouseover="togglemenu4()" onmouseout="menuout4()">Plan Your Trip</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <div class="search">
+                <img src="search.png" alt="">
+            </div> -->
+        </ul>
+        <div class="sub-menu-wrap" id="sm" onmouseout="menuout()" >
+            <div class="sub-menu" >
+                <div class="sm" >
+                    <a href="" class="sml" id="top">Island Overview</a>
+                    <a href="" class="sml">Kaua'i</a>
+                    <a href="" class="sml">O'ahu</a>
+                    <a href="" class="sml">Moloka'I</a>
+                    <a href="" class="sml">Lana'i</a>
+                    <a href="" class="sml">Maui</a>
+                    <a href="" class="sml">Islands</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap2" id="sm2" onmouseout="menuout2()">
+            <div class="sub-menu2">
+                <div class="sm2" >
+                    <a href="" class="sm2" id="top">Experiences overview</a>
+                    <a href="" class="sm2">Adventure</a>
+                    <a href="" class="sm2">Culinary</a>
+                    <a href="" class="sm2">Eco-Tourism</a>
+                    <a href="" class="sm2">Family fun</a>
+                    <a href="" class="sm2">Golf</a>
+                    <a href="" class="sm2">Heritage Sites</a>
+                    <a href="" class="sm2">Relaxation & Romance</a>
+                    <a href="" class="sm2">Sightseeing</a>
+                    <a href="" class="sm2">Voluntourism</a>
+                    <a href="" class="sm2">Wedding & Honeymoon</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap3" id="sm3" onmouseout="menuout3()">
+            <div class="sub-menu3">
+                <div class="sm3">
+                    <a href="" class="sm3" id="top">Culture overview</a>
+                    <a href="" class="sm3">History</a>
+                    <a href="" class="sm3">Traditions</a>
+                    <a href="" class="sm3">Hula</a>
+                    <a href="" class="sm3">Music</a>
+                    <a href="" class="sm3">Luau</a>
+                    <a href="" class="sm3">Hawaiian Launguage</a>
+                    <a href="" class="sm3">Art</a>
+                    <a href="" class="sm3">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap4" id="sm4" onmouseout="menuout4()">
+            <div class="sub-menu4">
+                <div class="sm4">
+                    <a href="" class="sm4" id="top">Planning overview</a>
+                    <a href="" class="sm4">Safety</a>
+                    <a href="" class="sm4">Travel Tips</a>
+                    <a href="" class="sm4">Special Alert/Notices</a>
+                    <a href="" class="sm4">Weather</a>
+                    <a href="" class="sm4">FAQ</a>
+                    <a href="" class="sm4">International Travelers</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                let nb= document.querySelector("navbar");
+                nb.classList.toggle("sticky" , window.scrollY > 0);
+            })
+        </script>
+    </navbar>
+    <script>
+        let sm = document.getElementById("sm");
+        let sm2 = document.getElementById("sm2");
+        let sm3 = document.getElementById("sm3");
+
+
+        function togglemenu(){
+            sm.classList.toggle("om");
+        }
+        function menuout(){
+            sm.classList.toggle("omo");
+        }
+        function togglemenu2(){
+            sm2.classList.toggle("om2");
+        }
+        function menuout2(){
+            sm2.classList.toggle("omo2");
+        }
+        function togglemenu3(){
+            sm3.classList.toggle("om3");
+        }
+        function menuout3(){
+            sm3.classList.toggle("omo3");
+        }
+        function togglemenu4(){
+            sm4.classList.toggle("om4");
+        }
+        function menuout4(){
+            sm4.classList.toggle("omo4");
+        }
+    </script>
+    <hr class="l1" >
+    <!-- <div id="play">
+        <img src="video playback.png" alt="videoplayback">
+    </div> -->
+    <div class="home">
+        <h1 class="h aloha" >Aloha</h1>
+        <h3 class="h3 aloha" >Have a Experience of lifetime</h3>
+    </div>
+    
+    <section class="border">
+        <img src="border.jpg" alt="border">
+    </section>
+    <section id="page2">
+        <h3>Explore Hawai'i As:</h3>
+        <div class="gallery-wrap">
+            <img src="arrowr.png" alt="" id="backbtn">
+            <div class="gallery">
+                <div class="c">
+                    <div class="box1">
+                        <a href="family.html""><img src="family.jpg"> </a>
+                        <h4 class="h4">Family</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="foodie.html"><img src="foodie.jpg"></a>
+                        <h4 class="h4">Foodie</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="culture.html"><img src="culture.jpg"></a> 
+                        <h4 class="h4">Culture</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="nature.html"><img src="nature.jpg"> </a>
+                        <h4 class="h4">Nature Lover</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="ft.html"><img src="ft.jpg"></a>
+                        <h4 class="h4" id="ft">First Timer</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="rs.html"><img src="rs.jpg"></a>
+                        <h4 class="h4" id="rs">Romance Seekers</h4> 
+                    </div>
+                    <!-- <div class="box1">
+                        <a href="oa.html"><img src="oa.jpg"></a>
+                        <h4 class="h4" id="oa">Outdoor Adventure</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="s.html"><img src="s.jpg"></a> 
+                        <h4 class="h4" id="s">Shopping</h4> 
+                    </div>
+                    <div class="box1">
+                        <a href="hw.html"><img src="hw.jpg"></a>
+                        <h4 class="h4" id="h">Health</h4> 
+                    </div> -->
+                </div> 
+            </div>
+            <img src="arrow.png" alt="" id="nextbtn">
+        </div>
+        <script>
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backbtn = document.getElementById("backbtn");
+            let nextbtn= document.getElementById("nextbtn");
+    
+            scrollContainer.addEventListener("wheel", (evt) =>{
+                evt.preventDefault();
+                scrollcontainer.scrollLeft+= evt.deltaY;
+            });
+            nextbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft+=1084;
+            });
+    
+            backbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft-=1084;
+            });   
+        </script>
+    </section>
+    <section class="border">
+        <img src="border.jpg" alt="border" id="border2">
+        </section>
+    <div id="page3">
+         <a href="subk.html" target="_blank" id="l1" class="l">Kaua'i</a>
+         <a href="subo.html" target="_blank" id="l2" class="l">O'ahu</a>
+         <a href="subm.html" target="_blank" id="l3" class="l">Moloka'i</a>
+         <a href="subl.html" target="_blank" id="l4" class="l">Lana'i</a>
+         <a href="submaui.html" target="_blank" id="l5" class="l">Maui</a>
+         <a href="subioh.html" target="_blank" id="l6" class="l">Islands Of Hawai'i</a>
+    </div>
+    <section id="page4">
+
+        <div class="p4wrap">
+            <img src="arrowr.png" alt="" id="backbtn2">
+            <div class="p4">
+                <div class="c">
+                    <div class="box2">
+                        <h1>Malama Hawaii</h1>
+                        <img src="mx1.jpg"> 
+                        <div id="cp4" class="content">
+                            <h2 >Hawaiian Arts & Culture: The Expression of Aloha</h2>
+                            <p >The oldest of Hawaiian chants describe the Hawaiian Islands, 
+                            the spirits that inhabit them, the forces of nature that shaped them 
+                            and all the living things upon them as inextricably connected. This sense 
+                            of connection is the foundation of Hawaiian culture: understanding that we 
+                            all have a mandate to mālama, to care for our environment and for one another.</p>
+                            <p >Today, Hawaiian culture may hold many of the answers sought in a rapidly 
+                            changing world. The spirit of aloha – being in the presence of and sharing 
+                            the essence of life – teaches us lessons of peace, kindness, compassion and 
+                            responsibility to future generations. These lessons are expressed through chant, 
+                            music, hula, arts and cultural practices, and through the warm, genuine greetings 
+                            that are a hallmark of Hawaiian hospitality.</p>
+                        </div> 
+                    </div>
+                    <div class="box2">
+                        <h1>Annul Festivals & Events</h1>
+                        <img src="mx2.jpg">
+                        <div id="cp4">
+                            <h2>The Festive Islands of Aloha</h2>
+                            <p >Dive deep into Hawai'i's local community and you'll discover a 
+                            culture alive with paniolo (cowboys), Chinese dragons, ethnic festivals, culinary events and an 
+                            exotic collection of celebrations.</p>
+                            <h2 >Annul Events</h2>
+                            <p >Many of Hawai'i's most memorable celebrations occur annually. 
+                            Some, like the Honolulu Marathon(December) and the Hawai'i International Film Festival (October), 
+                            draw visitors and participants from around the globe.</p>
+                            <h2 >food festivals</h2>
+                            <p >Events that feature local foods and agricultural products attract both locals and visitors. 
+                            The Hawai'i Food and Wine Festival on the islands of Hawai'i, Maui and O'ahu (October) and 
+                            the Kapalua Wine & Food Festival (June) on Maui are long-running culinary events, hosting 
+                            world-class chefs, winemakers and master sommeliers for thousands of wine and food lovers.</p>
+                        </div> 
+                    </div>
+                    <div class="box2">
+                        <h1>Art & Culture</h1>
+                        <img src="mx3.jpg">  
+                        <div id="cp4">
+                            <h2 >Hawaiian Arts & Culture: The Expression of Aloha</h2>
+                            <p >The oldest of Hawaiian chants describe the Hawaiian Islands, 
+                            the spirits that inhabit them, the forces of nature that shaped them 
+                            and all the living things upon them as inextricably connected. This sense 
+                            of connection is the foundation of Hawaiian culture: understanding that we 
+                            all have a mandate to mālama, to care for our environment and for one another.</p>
+                            <p >Today, Hawaiian culture may hold many of the answers sought in a rapidly 
+                            changing world. The spirit of aloha – being in the presence of and sharing 
+                            the essence of life – teaches us lessons of peace, kindness, compassion and 
+                            responsibility to future generations. These lessons are expressed through chant, 
+                            music, hula, arts and cultural practices, and through the warm, genuine greetings 
+                            that are a hallmark of Hawaiian hospitality.</p>
+                        </div> 
+                    </div>
+                    <div class="box2">
+                        <h1>Hawai'i Regional Cuisine</h1>
+                        <img src="mx4.jpg"> 
+                        <div id="cp4">
+                            <h2 >Cuisine of Hawai'i</h2>
+                            <p >It's been said that a melting pot is not the most accurate way to describe 
+                            Hawai'i's multiethnic population. It's more like a stew, where all the flavors 
+                            complement and influence one another but the ingredients retain their richness and 
+                            integrity instead of melting into an even sameness. Nothing tells the story of arrival, 
+                            intermingling and reinvention of cultural traditions on the islands as deliciously as 
+                            the variety of cuisines that make Hawai'i a foodie wonderland. It all starts with Hawai's 
+                            first people, the Native Hawaiians.</p>
+                            <p >Stewards of an island chain in the middle of the Pacific Ocean, Native Hawaiians 
+                            knew how to live sustainably. They partitioned segments of each island into ahupua'a 
+                            (land divisions), where people were given the responsibility and privilege to manage 
+                            the resources in their portion of the mountains, lowlands or ocean. The Hawaiians had a 
+                            genius for engineering, constructing vast irrigation systems to supply water to terraced farms.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <img src="arrow.png" alt="" id="nextbtn2">
+        </div>
+    <script>
+        let scrollContainer2 = document.querySelector(".p4");
+        let backbtn2 = document.getElementById("backbtn2");
+        let nextbtn2= document.getElementById("nextbtn2");
+
+        scrollContainer2.addEventListener("wheel", (evt) =>{
+            evt.preventDefault();
+            scrollcontainer2.scrollLeft+= evt.deltaY;
+        });
+        nextbtn2.addEventListener("click", ()=>{
+            scrollContainer2.style.scrollBehavior= "smooth";
+            scrollContainer2.scrollLeft+=1106;
+        });
+
+        backbtn2.addEventListener("click", ()=>{
+            scrollContainer2.style.scrollBehavior= "smooth";
+            scrollContainer2.scrollLeft-=1106;
+        });
+    </script>
+    <div id="op">
+        <section id="page5">
+            <div id="cp5">
+                <h1>Read More About</h1>
+                <p>Festivals and Events</p>
+                <h3>In Hawai'i</h3>
+                <button id="b"><a href="readmore.html" target="_blank">Read More</a></button>
+            </div>
+        </section>
+        <section id="page6">
+            <h1>Plan Your Trip Now:</h1>
+            <div id="i">
+                <div id="i1">
+                    <img src="hotel.jpg" alt="hotel">
+                    <h2>Accommodations</h2>
+                    <h3>Find Place To Stay</h3>
+                    <button><a href="acc.html">More</a></button>
+                </div>
+                <div id="i2">
+                    <img src="boat.jpg" alt="boat">
+                    <h2>Activities</h2>
+                    <h3>Find Things To Do</h3>
+                    <button class="b"><a href="activities.html">More</a></button>
+                </div>
+                <div id="i3">
+                    <img src="shop.jpg" alt="shop">
+                    <h2>All Hawai'i  Directory</h2>
+                    <h3>Find Things To Do</h3>
+                    <button> <a href="activities.html">More</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="page7">
+            <div class="footer">
+                <div id="ptag">
+                    <p>Download Our App</p>
+                </div>
+                <div id="as">
+                    <img src="appstore.png" alt="appstore">
+                </div>
+                <div id="ps">
+                    <img src="playstore.png" alt="playstore">
+                </div>
+            </div>
+            <div class="f">
+                <div class="f1">
+                    <p>MEETINGS & CONVENTIONS</p>
+                    <p>TRAVEL TRADE</p>
+                    <p>MEDIA</p>
+                    <p>EVENTS & FESTIVALS </p>
+                    <p>OFFICIAL VISITORS' GUIDE</p>
+                </div>
+                <div class="f2">
+                    <p>CORPORATE INFORMATION</p>
+                    <p>TRAVELERS WITH DISABILITIES</p>
+                    <p>LGBTQ+</p>
+                    <p>TRAVEL TIPS</p>
+                </div>
+            </div>
+            <div class="tag">
+                <div>
+                    <p>#GOHAWAI'I</p>
+                </div>
+                <div>
+                    <img src="meta.png" id="meta" alt="meta">
+                </div>
+                <div>
+                    <img src="twitter.png" id="twitter" alt="twitter">
+                </div>
+            </div>
+            <form class="form">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <div class="input">
+                    <input type="email" class="email" placeholder="enter your email">Signup
+                </div>
+            </form>
+            <hr class="l2" >
+            <p id="l">© 2023 Hawai'i Tourism Authority</p>
+            <div class="fl">
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>Terms & Policy</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>        
+    <script>
+        // function sendEmail(){
+        //     Email.send({
+        //     Host : "smtp.gmail.com",
+        //     Username : "gauravchudasama333@gmail.com",
+        //     Password : "password",
+        //     To : 'gauravchudasama333@gmail.com',
+        //     From : document.getElementById("email").value,
+        //     Subject : "new subscription",
+        //     Body : "And this is the body"
+        //     }).then(
+        //     message => alert(message)
+        //     );
+        // }
+        const submit = document.getElementsByClassName('email');
+        submit.addEventListener('submit', (e)=>{
+                e.preventDefault();
+                console.log("clicked");
+                Email.send({
+                    SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
+                    To : 'gauravchudasama333@gmail.com',
+                    From : document.getElementById('email').value,
+                    Subject : "New Subscription",
+                    Body : "And this is the body"
+                    }).then(
+                    message => alert(message)
+                );
+        })
+
+    </script>
+    </body>
+</html>

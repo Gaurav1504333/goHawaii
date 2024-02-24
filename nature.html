@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nature.css">
+    <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
+    <title>Nature Lover</title>
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <ul>
+            <li><a href="#" onclick="togglemenu()" onmouseover="togglemenu()" onmouseout="menuout()" >Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()" onmouseover="togglemenu2()" onmouseout="menuout2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()" onmouseover="togglemenu3()" onmouseout="menuout3()">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="#" onclick="togglemenu4()" onmouseover="togglemenu4()" onmouseout="menuout4()">Plan Your Trip</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <div class="search">
+                <img src="search.png" alt="">
+            </div> -->
+        </ul>
+        <div class="sub-menu-wrap" id="sm" onmouseout="menuout()" >
+            <div class="sub-menu" >
+                <div class="sm" >
+                    <a href="" class="sml" id="top">Island Overview</a>
+                    <a href="" class="sml">Kaua'i</a>
+                    <a href="" class="sml">O'ahu</a>
+                    <a href="" class="sml">Moloka'I</a>
+                    <a href="" class="sml">Lana'i</a>
+                    <a href="" class="sml">Maui</a>
+                    <a href="" class="sml">Islands</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap2" id="sm2" onmouseout="menuout2()">
+            <div class="sub-menu2">
+                <div class="sm2" >
+                    <a href="" class="sm2" id="top">Experiences overview</a>
+                    <a href="" class="sm2">Adventure</a>
+                    <a href="" class="sm2">Culinary</a>
+                    <a href="" class="sm2">Eco-Tourism</a>
+                    <a href="" class="sm2">Family fun</a>
+                    <a href="" class="sm2">Golf</a>
+                    <a href="" class="sm2">Heritage Sites</a>
+                    <a href="" class="sm2">Relaxation & Romance</a>
+                    <a href="" class="sm2">Sightseeing</a>
+                    <a href="" class="sm2">Voluntourism</a>
+                    <a href="" class="sm2">Wedding & Honeymoon</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap3" id="sm3" onmouseout="menuout3()">
+            <div class="sub-menu3">
+                <div class="sm3">
+                    <a href="" class="sm3" id="top">Culture overview</a>
+                    <a href="" class="sm3">History</a>
+                    <a href="" class="sm3">Traditions</a>
+                    <a href="" class="sm3">Hula</a>
+                    <a href="" class="sm3">Music</a>
+                    <a href="" class="sm3">Luau</a>
+                    <a href="" class="sm3">Hawaiian Launguage</a>
+                    <a href="" class="sm3">Art</a>
+                    <a href="" class="sm3">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap4" id="sm4" onmouseout="menuout4()">
+            <div class="sub-menu4">
+                <div class="sm4">
+                    <a href="" class="sm4" id="top">Planning overview</a>
+                    <a href="" class="sm4">Safety</a>
+                    <a href="" class="sm4">Travel Tips</a>
+                    <a href="" class="sm4">Special Alert/Notices</a>
+                    <a href="" class="sm4">Weather</a>
+                    <a href="" class="sm4">FAQ</a>
+                    <a href="" class="sm4">International Travelers</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                let nb= document.querySelector("navbar");
+                nb.classList.toggle("sticky" , window.scrollY > 0);
+            })
+        </script>
+    </navbar>
+    <script>
+        let sm = document.getElementById("sm");
+        let sm2 = document.getElementById("sm2");
+        let sm3 = document.getElementById("sm3");
+
+
+        function togglemenu(){
+            sm.classList.toggle("om");
+        }
+        function menuout(){
+            sm.classList.toggle("omo");
+        }
+        function togglemenu2(){
+            sm2.classList.toggle("om2");
+        }
+        function menuout2(){
+            sm2.classList.toggle("omo2");
+        }
+        function togglemenu3(){
+            sm3.classList.toggle("om3");
+        }
+        function menuout3(){
+            sm3.classList.toggle("omo3");
+        }
+        function togglemenu4(){
+            sm4.classList.toggle("om4");
+        }
+        function menuout4(){
+            sm4.classList.toggle("omo4");
+        }
+    </script>
+
+
+    <div class="slider">
+        <div class="wrap">
+            <div class="content">
+                <h1>State & National Parks of Hawaiʻi</h1>
+                <p>
+                    Hawaiʻi is home to several national parks and 50 state parks that pay tribute 
+                    to the islands' unique beauty and native culture. From the awe-inspiring natural 
+                    wonders of Hawaiʻi Volcanoes National Park to the poignant beauty of Kalaupapa National 
+                    Historical Park on Molokaʻi, there are a variety of experiences and adventures waiting 
+                    to be discovered. We invite you to explore the places that make the Hawaiian Islands 
+                    so special. 
+                </p>
+                <p>
+                    Fun State and National Park Fact: 90% of the 1,000 species found in Hawaiʻi’s 
+                    parks are found nowhere else on earth!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="p2">
+        <h1>National Parks of Hawaiʻi</h1>
+        <div class="gallery-wrap">
+            <img src="arrowr.png" alt="" id="backbtn">
+            <div class="gallery">
+                <div class="c">
+                    <div class="box1">
+                        <img src="nl1.png"> 
+                        <h4 class="h4">Volcano National Park</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="nl2.png">
+                        <h4 class="h4" id="h42">Haleakala National Park</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="nl3.png"> 
+                        <h4 class="h4" id="h43">Waimea Canyon</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="nl4.png"> 
+                        <h4 class="h4" id="h44">Pearl Harbor</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="nl5.png"> 
+                        <h4 class="h4" id="h45">Pu'uhonoua o Honaunau</h4> 
+                    </div>
+                    <div class="box1">
+                        <img src="nl6.png"> 
+                        <h4 class="h4" id="h46">Makena Beach</h4> 
+                    </div>
+                </div> 
+            </div>
+            <img src="arrow.png" alt="" id="nextbtn">
+        </div>
+        <script>
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backbtn = document.getElementById("backbtn");
+            let nextbtn= document.getElementById("nextbtn");
+    
+            scrollContainer.addEventListener("wheel", (evt) =>{
+                evt.preventDefault();
+                scrollcontainer.scrollLeft+= evt.deltaY;
+            });
+            nextbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft+=1084;
+            });
+    
+            backbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft-=1084;
+            });   
+        </script>
+    </div>
+    <div id="divp7">
+        <section id="page7">
+            <div class="footer">
+                <div id="ptag">
+                    <p>Download Our App</p>
+                </div>
+                <div id="as">
+                    <img src="appstore.png" alt="appstore">
+                </div>
+                <div id="ps">
+                    <img src="playstore.png" alt="playstore">
+                </div>
+            </div>
+            <div class="f">
+                <div class="f1">
+                    <p>MEETINGS & CONVENTIONS</p>
+                    <p>TRAVEL TRADE</p>
+                    <p>MEDIA</p>
+                    <p>EVENTS & FESTIVALS </p>
+                    <p>OFFICIAL VISITORS' GUIDE</p>
+                </div>
+                <div class="f2">
+                    <p>CORPORATE INFORMATION</p>
+                    <p>TRAVELERS WITH DISABILITIES</p>
+                    <p>LGBTQ+</p>
+                    <p>TRAVEL TIPS</p>
+                </div>
+            </div>
+            <div class="tag">
+                <div>
+                    <p>#GOHAWAI'I</p>
+                </div>
+                <div>
+                    <img src="meta.png" id="meta" alt="meta">
+                </div>
+                <div>
+                    <img src="twitter.png" id="twitter" alt="twitter">
+                </div>
+            </div>
+            <div class="form">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <div class="input">
+                    <input type="email" placeholder="enter your email">Signup
+                </div>
+            </div>
+            <hr class="l2" >
+            <p id="l">© 2023 Hawai'i Tourism Authority</p>
+            <div class="fl">
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>Terms & Policy</p>
+            </div>
+        </section>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navbar.css">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <ul>
+            <li><a href="#" onclick="togglemenu()">Islands</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="">Plan Your Trip</a></li>
+            <li><a href="">Contact Us</a></li>
+            <div class="search">
+                <button type="submit"><i class="fa fa-search"></i></button> 
+            </div>
+        </ul>
+        <div class="sub-menu-wrap" id="sm">
+            <div class="sub-menu">
+                <div class="sm">
+                    <a href="" class="sml">1</a>
+                    <a href="" class="sml">2</a>
+                    <a href="" class="sml">3</a>
+                    <a href="" class="sml">4</a>
+                    <a href="" class="sml">5</a>
+                    <a href="" class="sml">6</a>
+                    <a href="" class="sml">7</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            let sm = document.getElementById("sm");
+
+            function togglemenu(){
+                sm.classList.toggle("om");
+            }
+        </script>
+    </navbar>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            let nb= document.querySelector("navbar");
+            nb.classList.toggle("sticky" , window.scrollY > 0);
+        })
+    </script>
+    <img src="map.jpeg" alt="">
+    <img src="map.jpeg" alt="">
+</body>
+</html>

@@ -1,0 +1,112 @@
+@font-face {
+    font-family:aloha;
+    src: url(AlohaDemo-ya0V.ttf);
+}
+@font-face {
+    font-family:displace;
+    src:url(Displace20-Black.ttf);
+}
+@font-face {
+    font-family: osscb;
+    src: url(OpenSans_SemiCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: oscsi;
+    src: url(OpenSans_Condensed-SemiBoldItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+#page4::before{
+    content:"";
+    background:url('4b.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:560px;
+    width:100%;
+    z-index:-1;
+}
+.p4{
+    width:1100px;
+    height: 561px;
+    display: flex;
+    overflow-x:scroll ;
+}
+#cp4{
+    position: absolute;
+    display: block;
+    color: white;
+}
+.p4::-webkit-scrollbar{
+    display: none;
+}
+.p4 .c{
+    width: 100%;
+    display:flex;
+}
+.p4 .c .main{
+    width:1160px;
+    height:561px;
+    opacity: 0.9;
+}
+.p4-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#backbtn2,#nextbtn2{
+    z-index: 1;
+    position: relative;
+    height:5%;
+    width: 5%;
+    cursor: pointer;
+}
+#backbtn2:hover,#nextbtn2:hover{
+    filter: invert(100%);
+}
+#backbtn2{
+    left:88px;
+}
+#nextbtn2{
+    right:88px;
+}
+h1{
+    font-family: aloha;
+    font-weight: 100;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    top: 64px;
+    left: 48px;
+    color: white;
+    z-index: 2;
+}
+.p4 .box1{
+    position: relative;
+    bottom: 46px;
+}
+#cp4{
+    position: relative;
+    bottom: 428px;
+    margin-left: 520px;
+    margin-right:96px;
+}
+#cp4 h2{
+    margin:4px 0px 4px 0px;
+    font-family: osscb;
+}
+#cp4 p{
+    padding: 8px 0px 8px 0px;
+    font-size: 1rem;
+    font-weight 1px;
+    font-family: oscsi;
+}
+#food ,#events{
+    opacity: 0.8;
+}
+#food{
+    width: 1152px;
+}

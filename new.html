@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="arrowr.png" alt="" id="backbtn">
+        <div class="gallery">
+            <div class="c">
+                <div class="box1">
+                    <img src="family.jpg"> 
+                    <h4 class="h4">Family</h4> 
+                </div>
+                <div class="box1">
+                    <img src="foodie.jpg">
+                    <h4 class="h4">Foodie</h4> 
+                </div>
+                <div class="box1">
+                    <img src="culture.jpg"> 
+                    <h4 class="h4">Culture</h4> 
+                </div>
+                <div class="box1">
+                    <img src="nature.jpg"> 
+                    <h4 class="h3">Nature Lover</h4> 
+                </div>
+                <div class="box1">
+                    <img src="ft.jpg"> 
+                    <h4 class="h3">First Timer</h4> 
+                </div>
+                <div class="box1">
+                    <img src="rs.jpg"> 
+                    <h4 class="h3">Romance Seekers</h4> 
+                </div>
+                <div class="box1">
+                    <img src="oa.jpg"> 
+                    <h4 class="h">Outdoor Adventure</h4> 
+                </div>
+                <div class="box1">
+                    <img src="s.jpg"> 
+                    <h4 class="h">Shopping</h4> 
+                </div>
+                <div class="box1">
+                    <img src="hw.jpg"> 
+                    <h4 class="h">Health</h4> 
+                </div>
+            </div> 
+        </div>
+        <img src="arrow.png" alt="" id="nextbtn">
+    </div>
+    <script>
+
+        let scrollContainer = document.querySelector(".gallery");
+        let backbtn = document.getElementById("backbtn");
+        let nextbtn= document.getElementById("nextbtn");
+
+        scrollContainer.addEventListener("wheel", (evt) =>{
+            evt.preventDefault();
+            scrollcontainer.scrollLeft+= evt.deltaY;
+        });
+        nextbtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior= "smooth";
+            scrollContainer.scrollLeft+=1100;
+        });
+
+        backbtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior= "smooth";
+            scrollContainer.scrollLeft-=1100;
+        });    
+
+    </script>
+</body>
+</html>
