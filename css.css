@@ -207,7 +207,7 @@
 .sub-menu-wrap3{
     position: absolute;
     top:50px;
-    left:256px;
+    left:255px;
     color: white;
     background-color: rgb(0, 0, 0, 0.9);
     font-family:opensans;
@@ -234,7 +234,7 @@
 .sub-menu-wrap4{
     position: absolute;
     top:50px;
-    left:856px;
+    left:870px;
     color: white;
     background-color: rgb(0, 0, 0, 0.9);
     font-family:opensans;
