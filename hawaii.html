@@ -203,12 +203,12 @@
         <img src="border.jpg" alt="border" id="border2">
         </section>
     <div id="page3">
-         <a href="subk.html" target="_blank" id="l1" class="l">Kaua'i</a>
-         <a href="subo.html" target="_blank" id="l2" class="l">O'ahu</a>
-         <a href="subm.html" target="_blank" id="l3" class="l">Moloka'i</a>
-         <a href="subl.html" target="_blank" id="l4" class="l">Lana'i</a>
-         <a href="submaui.html" target="_blank" id="l5" class="l">Maui</a>
-         <a href="subioh.html" target="_blank" id="l6" class="l">Islands Of Hawai'i</a>
+        <a href="subk.html" target="_blank" id="l1" class="l">Kaua'i</a>
+        <a href="subo.html" target="_blank" id="l2" class="l">O'ahu</a>
+        <a href="subm.html" target="_blank" id="l3" class="l">Moloka'i</a>
+        <a href="subl.html" target="_blank" id="l4" class="l">Lana'i</a>
+        <a href="submaui.html" target="_blank" id="l5" class="l">Maui</a>
+        <a href="subioh.html" target="_blank" id="l6" class="l">Islands Of Hawai'i</a>
     </div>
     <section id="page4">
 
@@ -383,10 +383,11 @@
                     <img src="twitter.png" id="twitter" alt="twitter">
                 </div>
             </div>
-            <form class="form">
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
                 <p>SIGN UP FOR OUR NEWSLETTER</p>
                 <div class="input">
-                    <input type="email" class="email" placeholder="enter your email">Signup
+                    <input type="email" id="email" placeholder="enter your email">
+                    <button type="submit">sign up</button>
                 </div>
             </form>
             <hr class="l2" >
@@ -400,37 +401,37 @@
             </div>
         </section>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>        
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        // function sendEmail(){
-        //     Email.send({
-        //     Host : "smtp.gmail.com",
-        //     Username : "gauravchudasama333@gmail.com",
-        //     Password : "password",
-        //     To : 'gauravchudasama333@gmail.com',
-        //     From : document.getElementById("email").value,
-        //     Subject : "new subscription",
-        //     Body : "And this is the body"
-        //     }).then(
-        //     message => alert(message)
-        //     );
-        // }
-        const submit = document.getElementsByClassName('email');
-        submit.addEventListener('submit', (e)=>{
-                e.preventDefault();
-                console.log("clicked");
-                Email.send({
-                    SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
-                    To : 'gauravchudasama333@gmail.com',
-                    From : document.getElementById('email').value,
-                    Subject : "New Subscription",
-                    Body : "And this is the body"
-                    }).then(
-                    message => alert(message)
-                );
-        })
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "gauravchudasama333@gmail.com",
+            Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+            To : 'gauravchudasama333@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "new subscription",
+            Body : "Email: " + document.getElementById('email').value
+                +"<br> Has Subscribed"
+            }).then(
+                message => alert("Thank you for subscribing")
+            );
+        }
+        // const submit = document.getElementsByClassName('email');
+        // submit.addEventListener('submit', (e)=>{
+        //         e.preventDefault();
+        //         console.log("clicked");
+        //         Email.send({
+        //             SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
+        //             To : 'gauravchudasama333@gmail.com',
+        //             From : document.getElementById('email').value,
+        //             Subject : "New Subscription",
+        //             Body : "And this is the body"
+        //             }).then(
+        //             message => alert(message)
+        //         );
+        // })
 
     </script>
-    </body>
+</body>        
 </html>
