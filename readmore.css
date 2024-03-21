@@ -7,8 +7,8 @@
     src: url(AlohaDemo-ya0V.ttf);
 }
 @font-face {
-    font-family:museosans;
-    src: url(MuseoSans_700.otf);
+    font-family:oseb;
+    src: url(OpenSans-ExtraBold.ttf);
 }
 @font-face {
     font-family:os2;
@@ -74,15 +74,15 @@
     z-index: 999;
     transition: 0.6s;
 }
- #navbar{
-     display:flex;
-     align-items: center;
-     font-family:opensans;
-     position: relative;
-     justify-content: space-between;
-     padding:0px 16px 0px 16px;
-     transition:0.6s ;
-     z-index: 999;
+#navbar{
+    display:flex;
+    align-items: center;
+    font-family:opensans;
+    position: relative;
+    justify-content: space-between;
+    padding:0px 16px 0px 16px;
+    transition:0.6s ;
+    z-index: 999;
 }
 #navbar ul{
     display:flex;
@@ -92,10 +92,10 @@
     padding: 0px 16px 0px 16px;
 }
 .l1{
-   width:95%;
-   display:block;
-   margin:auto;
-   background-color: white;
+    width:95%;
+    display:block;
+    margin:auto;
+    background-color: white;
 }
 #navbar a:hover{
     background-color: rgb(88, 88, 88,0.8);
