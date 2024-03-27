@@ -848,16 +848,23 @@
     font-weight: 200;
     background-color: rgb(255, 255, 255);
     font-size:0.8rem;
-    /* padding-right: 6px; */
     cursor: pointer;
+}
+.input input{
+    margin-right:6px;
+    background-color: black;
+    color: rgb(255, 255, 255, 40);
+    border: 0px;
+    padding:2px;
 }
 .input button{
     font-family: osscb;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: 0px;
-    padding: 0px 8px 2px 8px;
+    padding: 0px 8px 1px 8px;
     cursor: pointer;
+    margin-left: -9px;
 }
 .input button:hover{
     color: black;

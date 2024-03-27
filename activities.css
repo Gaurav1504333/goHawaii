@@ -79,15 +79,15 @@
     z-index: 999;
     transition: 0.6s;
 }
- #navbar{
-     display:flex;
-     align-items: center;
-     font-family:opensans;
-     position: relative;
-     justify-content: space-between;
-     padding:0px 16px 0px 16px;
-     transition:0.6s ;
-     z-index: 999;
+#navbar{
+    display:flex;
+    align-items: center;
+    font-family:opensans;
+    position: relative;
+    justify-content: space-between;
+    padding:0px 16px 0px 16px;
+    transition:0.6s ;
+    z-index: 999;
 }
 #navbar ul{
     display:flex;
@@ -97,10 +97,10 @@
     padding: 0px 16px 0px 16px;
 }
 .l1{
-   width:95%;
-   display:block;
-   margin:auto;
-   background-color: white;
+    width:95%;
+    display:block;
+    margin:auto;
+    background-color: white;
 }
 #navbar a:hover{
     background-color: rgb(88, 88, 88,0.8);
@@ -403,7 +403,7 @@
     font-weight: 300;
     font-family: aloha;
     position:relative;
-    top: 590px;
+    top: 620px;
     opacity: 0.9;
     left: 64px;
     display: inline-block;
@@ -492,7 +492,6 @@
     font-weight: 200;
     background-color: rgb(255, 255, 255);
     font-size:0.8rem;
-    padding-right: 6px;
     cursor: pointer;
 }
 .input input{
@@ -502,6 +501,19 @@
     border: 0px;
     padding:2px;
 }
+.input button{
+    font-family: osscb;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px 8px 1px 8px;
+    cursor: pointer;
+    margin-left: -9px;
+}
+.input button:hover{
+    color: black;
+    background-color:gray;
+}
 .l2{
     width:95%;
     display:block;
@@ -510,8 +522,8 @@
     background-color: white;
     position:relative;
     top:730px;
- }
- #l{
+}
+#l{
     display: inline-block;
     color: white;
     font-family: osscl;
@@ -521,17 +533,17 @@
     top:740px;
     left: 64px;
     font-weight: 100;
- }
- #as img:hover{
+}
+#as img:hover{
     filter: invert(100%);
- }
- #ps img:hover{
+}
+#ps img:hover{
     filter: invert(100%);
- }
- .fl{
+}
+.fl{
     display: flex;
- }
- .fl p{
+}
+.fl p{
     font-family: osscl;
     font-size: 0.6rem;
     opacity:0.6;
@@ -541,8 +553,8 @@
     color: white;
     padding-right: 12px;
     cursor: pointer;
- }
- .fl p:hover{
+}
+.fl p:hover{
     opacity:1;
     filter: invert(100%);
- }
+}

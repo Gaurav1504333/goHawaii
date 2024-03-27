@@ -254,12 +254,13 @@
                     <img src="twitter.png" id="twitter" alt="twitter">
                 </div>
             </div>
-            <div class="form">
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
                 <p>SIGN UP FOR OUR NEWSLETTER</p>
                 <div class="input">
-                    <input type="email" placeholder="enter your email">Signup
+                    <input type="email" id="email" placeholder="enter your email">
+                    <button type="submit">sign up</button>
                 </div>
-            </div>
+            </form>
             <hr class="l2" >
             <p id="l">© 2023 Hawai'i Tourism Authority</p>
             <div class="fl">
@@ -270,6 +271,39 @@
                 <p>Terms & Policy</p>
             </div>
         </section>
-    </div>   
-</body>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "gauravchudasama333@gmail.com",
+            Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+            To : 'gauravchudasama333@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "new subscription",
+            Body : "Email: " + document.getElementById('email').value
+                +"<br> Has Subscribed"
+            }).then(
+                message => alert("Thank you for subscribing")
+            );
+        }
+        // const submit = document.getElementsByClassName('email');
+        // submit.addEventListener('submit', (e)=>{
+        //         e.preventDefault();
+        //         console.log("clicked");
+        //         Email.send({
+        //             SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
+        //             To : 'gauravchudasama333@gmail.com',
+        //             From : document.getElementById('email').value,
+        //             Subject : "New Subscription",
+        //             Body : "And this is the body"
+        //             }).then(
+        //             message => alert(message)
+        //         );
+        // })
+    
+    </script>
+    </div>
+</body>        
 </html>
