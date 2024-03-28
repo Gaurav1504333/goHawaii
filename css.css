@@ -330,7 +330,7 @@
 } */
 .border img{
     width:100%;
-    height: 46px;
+    height: 36px;
     opacity: 0.8;
     z-index:2;
 }
@@ -359,8 +359,6 @@
     width:100%;
     display: flex;
     overflow-x:scroll ;
-    margin: 0px 8px 0px -8px;
-    
 }
 .gallery::-webkit-scrollbar{
     display: none;
@@ -368,14 +366,11 @@
 .gallery .c{
     width: 100%;
     display:flex;
-    padding:16px;
-    /* flex: none; */
 }
 .gallery .box1 img{
     width: 300px;
     height:240px;
     border-radius: 20px;
-    margin-left: -4px;
 }
 .gallery-wrap{
     display: flex;
@@ -606,45 +601,58 @@
     z-index:-1;
     margin-top:192px;
 } 
+#cp5{
+    display: inline-block;
+    position: relative;
+    left:67%;
+}
 #cp5 h1{
     font-family:displace;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
     position: relative;
-    top:230px;
-    left:71%;
+    top:250px;
+    /* left:71%; */
     display: inline-block;
     background-color: rgb(120, 118, 118, 0);
+    display: flex;
+    justify-content: center;
+
 }
 #cp5 p{
     font-family:aloha;
     font-size: 2.5rem;
     color: white;
     position: relative;
-    top:280px;
-    left:50.3%;
-    display: inline-block;
+    top:250px;
+    /* left:50.3%; */
     background-color: rgb(120, 118, 118, 0);
+    display: flex;
+    justify-content: center;
 }
 #cp5 h3{
     font-family:os2;
     font-size: 1.3rem;
     color: white;
     position: relative;
-    top:315px;
-    left:35%;
+    top:250px;
+    /* left:35%; */
     display: inline-block;
     background-color: rgb(120, 118, 118, 0);
+    display: flex;
+    justify-content: center;
 }
 #cp5 button{
     font-family: oscsb;
+    display: block;
+    margin: auto;
     position:relative;
-    top:360px;
-    left:28.9%;
+    top:262px;
+    /* left:28.9%; */
     cursor: pointer;
     padding: 3px 6px 3px 6px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: black;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -661,6 +669,10 @@
 }
 #cp5 a:hover{
     color: black;
+}
+#page6{
+    position: relative;
+    top: -76px;
 }
 #page6::before{
     content:"";
@@ -683,18 +695,36 @@
 }
 #i{
     display: flex;
-    position: relative;
+    /* position: relative;
     left:5%;
     width:85%;
-    margin-left:85px;
+    margin-left:85px; */
+    justify-content: space-around;
+    padding: 0px 64px 0px 64px;
 }
 #i img{
-    width:73%;
+    width:70%;
     height:75%;
-    position:relative;
+    position: relative;
     top:520px;
     border-radius: 16px;
     box-shadow: 6px 6px 10px rgb(59, 59, 59);
+    left:56px;
+}
+#i1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#i2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#i3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 #i h2{
     font-family:oscr;
@@ -705,8 +735,8 @@
     top:530px;
     opacity: 0.8;
     text-align:center;
-    position: relative;
-    right:48px;
+    /* position: relative;
+    right:48px; */
     cursor: pointer;
 }
 #i h3{
@@ -718,15 +748,17 @@
     top:530px;
     opacity: 0.8;
     text-align:center;
-    position: relative;
-    right:48px;
+    /* position: relative;
+    right:48px; */
     cursor: pointer;
     opacity: 0.6;
 }
 #i button{
+    width:40px;
+    display: block;
+    margin: auto;
     position: relative;
-    top:535px;
-    left:108px;
+    top:520px;
     font-family: oscsb;
     padding: 0px 4px 0px 4px;
     cursor: pointer;
@@ -737,9 +769,6 @@
 }
 #i button:hover{
     filter: invert(100%);
-}
-#i .b{
-    left:112px;
 }
 #page7::before{
     content:"";
