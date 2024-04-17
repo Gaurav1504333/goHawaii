@@ -774,7 +774,7 @@
     content:"";
     background:url('last.jpg') no-repeat center center/cover;
     position:absolute;
-    height:400px;
+    height:380px;
     width:100%;
     z-index:-1;
     margin-top:600px;
@@ -826,39 +826,6 @@
 }
 .f p:hover{
     filter: invert(100%);
-}
-.tag{
-    display: flex;
-    width:20%;
-    position: relative;
-    top: 750px;
-    left: 64px;
-}
-.tag p{
-    font-family:ossc;
-    color: white;
-    cursor: pointer;
-}
-.tag img{
-    width:20%;
-    cursor: pointer;
-}
-#meta{
-    width:30%;
-    position: relative;
-    bottom:1px;
-    left: 8px;
-}
-.tag img:hover{
-    filter: invert(100%);
-}
-.tag p:hover{
-    filter:invert(100%);
-}
-#twitter{
-    position: relative;
-    top:3px;
-    right:40px;
 }
 .form{
     position: relative;
