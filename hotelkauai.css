@@ -70,40 +70,7 @@
 .slider{
     height: 552px;
     width:1262px;
-    background: url(c1.png);
-    animation: slide 60s infinite;
-}
-@keyframes slide{
-    10%{
-        background: url(c2.png);
-    }
-    20%{
-        background: url(c3.png);
-    }
-    30%{
-        background: url(c4.png);
-    }
-    40%{
-        background: url(c5.png);
-    }
-    50%{
-        background: url(c6.png);
-    }
-    60%{
-        background: url(c7.png);
-    }
-    70%{
-        background: url(c8.png);
-    }
-    80%{
-        background: url(c9.png);
-    }
-    90%{
-        background: url(c10.png);
-    }
-    100%{
-        background: url(c1.png);
-    }
+    background: url(accbg.png);
 }
 .sticky{
     position:sticky !important;
@@ -305,9 +272,9 @@
 .slider .wrap .content{
     color: rgb(255, 255, 255);
     padding: 64px 64px 64px 64px;
-    background-color: rgb(0, 0, 0, 0.35);
+    /* background-color: rgb(0, 0, 0, 0.35); */
     border-radius: 32px;
-    margin-top: 80px;
+    margin-top: 128px;
 }
 .slider .wrap{
     position: relative;
@@ -319,9 +286,8 @@
 }
 .slider .wrap .content h1{
     font-family:aloha;
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 200;
-    margin-bottom: 8px;
 }
 /* .slider .wrap .content h2{
     font-family: osscr;
@@ -338,18 +304,19 @@
     font-size: 2rem;
     font-weight: 100;
     position:relative;
-    left:80vh;
+    left:86vh;
     top: 64px;
     display: inline;
     color: white;
 }
 #p2::before{
     content:"";
-    background:url('culturebg.png') no-repeat center center/cover;
+    background:url('accbg2.png') no-repeat center center/cover;
     position:absolute;
     height:600px;
     width:100%;
     z-index:-1;
+    margin-top: 32px;
     /* margin-top:70px; */
 } 
 .gallery{
@@ -400,58 +367,6 @@
 .gallery .box1{
     transition: transform 0.3s;
 }
-/* .box1 .h4{
-    position:relative;
-    color: white;
-    left: 23%;
-}
-.box1 #h42{
-    left: 30%;
-}
-.box1 #h43{
-    left:40% !important;
-}
-.box1 #h44{
-    left:42% !important;
-}
-.box1 #h45{
-    left:42% !important;
-}
-.box1 #h46{
-    left:22% !important;
-}
-.box1 #h47{
-    left:30% !important;
-}
-.box1 h4{
-    font-family: displace;
-    margin-top: 8px;
-}
-.box1 .h3{
-    position:relative;
-    color: white;
-    left:29%;
-}
-.box1 #ft{
-    position: relative;
-    left:100px !important;
-}
-.box1 #rs{
-    position: relative;
-    left:76px !important;
-}
-.box1 #oa{
-    position: relative;
-    left:68px !important;
-}
-.box1 #h{
-    position: relative;
-    left:118px !important;
-}
-.box1 #s{
-    position: relative;
-    left:105px !important;
-} */
 .gallery .box1 .h4{
     text-align:center;
     font-family:displace;
@@ -508,7 +423,7 @@
 #ps,#as{
     position: relative;
     top: 620px;
-    width:70vh;
+    width:30%;
 }
 #ps img,#as img{
     cursor: pointer;

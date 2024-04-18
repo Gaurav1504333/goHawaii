@@ -489,7 +489,7 @@
 #ps,#as{
     position: relative;
     top: 620px;
-    width:30%;
+    width:70vh;
 }
 #ps img,#as img{
     cursor: pointer;
