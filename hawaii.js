@@ -122,9 +122,29 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+// const bodyparser = require("body-parser");
+
+// const mongoose = require('mongoose');
+
+// main().catch(err => console.log(err));
+
+// async function main() {
+//     await mongoose.connect('mongodb://localhost/hotel1.html');
+// }
+
+// const h1infoSchema = new mongoose.Schema({
+//     fullname: String,
+//     phone: String,
+//     arival_date: String,
+//     leaving_date: String
+// });
+
+// const booking = mongoose.model('booking', h1infoSchema);
+
 
 const app = express();
 const htmlFilePath = path.join(__dirname, 'hawaii.html');
+
 const cssFilePath = path.join(__dirname, 'css.css');
 const logoImageFilePath = path.join(__dirname, 'logo.png'); // Adding the logo image file
 const fontFilePath1 = path.join(__dirname, 'Displace20-Black.ttf'); // Assuming the font file is named "Displace20-Black.ttf"
@@ -155,7 +175,6 @@ const cssFileNames = ['acc.css', 'activities.css', 'culture.css', 'family.css', 
 app.get('/', (req, res) => {
     res.sendFile(htmlFilePath);
 });
-
 app.get('/css.css', (req, res) => {
     res.sendFile(cssFilePath);
 });

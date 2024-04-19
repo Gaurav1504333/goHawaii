@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="hotel1.css">
     <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
-    <title>Accommodations At Kaua'i</title>
+    <title>The Westin Princeville Ocean Resort Villas</title>
 </head>
 <body bgcolor="black">
     <navbar id="navbar">
@@ -33,7 +33,7 @@
             <div class="sub-menu" >
                 <div class="sm" >
                     <a href="" class="sml" id="top">Island Overview</a>
-                    <a href="hotelskauai.html" class="sml">Kaua'i</a>
+                    <a href=""" class="sml">Kaua'i</a>
                     <a href="" class="sml">O'ahu</a>
                     <a href="" class="sml">Moloka'I</a>
                     <a href="" class="sml">Lana'i</a>
@@ -157,7 +157,7 @@
             <script>
                 function scrollPage() {
                     window.scrollBy({
-                        top: 600,
+                        top: 500,
                         left: 0,
                         behavior: 'smooth' 
                     });
@@ -216,24 +216,64 @@
     </script>
     <div id="page2">
         <div class="inputform">
-            <form action="#" method="post">
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
-                
-                <label for="phone">Phone Number:</label><br>
-                <input type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
-                
-                <label for="booking_date">Date of arival:</label><br>
-                <input type="date" id="arival_date" name="arival_date"><br><br>
-                
-                <label for="leaving_date">Date of Leaving:</label><br>
-                <input type="date" id="leaving_date" name="leaving_date"><br><br>
-                
+            <form action="#" method="post" onsubmit="sendEmail2(); return false;">
+                <div class="formwrap1">
+                    <div class="from1">
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                        
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
+                    </div>
+                    <div class="form2">
+                        <label for="arrival_date">Check-In Date:</label><br>
+                        <input type="date" id="arrival_date" name="arrival_date"><br><br>
+                        
+                        <label for="leaving_date">Check-Out Date:</label><br>
+                        <input type="date" id="leaving_date" name="leaving_date"><br><br>
+                        
+                        <label for="num_members">Number of Members:</label><br>
+                        <input type="text" id="num_members" name="num_members" placeholder="Enter number of members"><br><br>
+                    </div>           
+                </div>   
                 <button type="submit">Submit</button>
             </form>
+            
+            
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+            function sendEmail2(){
+                var email = document.getElementById('email').value;
+                var phonenumber = document.getElementById('phone').value;
+                var fullname = document.getElementById('fullname').value;
+                var arrival_date = document.getElementById('arrival_date').value;
+                var leaving_date = document.getElementById('leaving_date').value;
+                var num_members = document.getElementById('num_members').value; // Retrieve number of members
+                
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "gauravchudasama333@gmail.com",
+                    Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+                    To : 'gauravchudasama333@gmail.com',
+                    From : email,
+                    Subject : "New Booking enquiry for hotel The Westin Princeville Ocean Resort Villas",
+                    Body : "Full Name: " + fullname +
+                    "<br>Email: " + email +
+                    "<br>Phone Number: " + phonenumber +
+                    "<br>Arrival Date: " + arrival_date +
+                    "<br>Leaving Date: " + leaving_date +
+                    "<br>Number of Members: " + num_members                
+                }).then(
+                    message => alert("Will let you know if room is available at your dates")
+                );
+            }
+        </script>
         </div>
-    
     </div>
+    
 
 
     <div id="divp7">
