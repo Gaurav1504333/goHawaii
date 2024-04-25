@@ -384,6 +384,7 @@
     filter: invert(100%);
 }
 #backbtn2{
+    z-index: 2;
     left:80px;
 }
 #nextbtn2{
