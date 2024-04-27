@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hotel5.css">
+    <link rel="stylesheet" href="hoteloahu6.css">
     <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
-    <title>Hotel Coral Reef</title>
+    <title>Sheraton Waikiki Beach Resort</title>
 </head>
 <body bgcolor="black">
     <navbar id="navbar">
@@ -33,7 +33,7 @@
             <div class="sub-menu" >
                 <div class="sm" >
                     <a href="" class="sml" id="top">Island Overview</a>
-                    <a href="" class="sml">Kaua'i</a>
+                    <a href=""" class="sml">Kaua'i</a>
                     <a href="" class="sml">O'ahu</a>
                     <a href="" class="sml">Moloka'I</a>
                     <a href="" class="sml">Lana'i</a>
@@ -127,11 +127,11 @@
     </script>
     <div class="hotelinfo">
         <div class="hotelname">
-            <h1>Hotel Coral Reef</h1>
+            <h1>Sheraton Waikiki Resort</h1>
         </div>
         <div id="hoteldetails">
-            <p>4-1516 Kuhio Highway, Kapaa, HI, 96746</p>
-            <h2>Rating: 8.4/10</h2>
+            <p>2255 Kalakaua Ave, Honolulu, HI, 96815</p>
+            <h2>Rating: 9/10</h2>
             <br>
             <h3>Popular amenities</h3>
             <div class="amenities">
@@ -152,7 +152,7 @@
                     <li>Laundry</li>
                 </div>
             </div>
-            <p id="Pricing">Pricing Per Night: 13,000Rs.</p>
+            <p id="Pricing">Pricing Per Night: 33,000Rs.</p>
             <button onclick="scrollPage()">Book Now</button>
             <script>
                 function scrollPage() {
@@ -171,16 +171,16 @@
             <div class="page">
                 <div class="c">
                     <div class="box1">
-                        <img src="h51.jpg" class="main"> 
+                        <img src="hoahu61.jpg" class="main"> 
                     </div>
                     <div class="box1">
-                        <img src="h52.jpg"  class="main">
+                        <img src="hoahu62.jpg"  class="main">
                     </div>
                     <div class="box1">
-                        <img src="h53.jpg" class="main"> 
+                        <img src="hoahu63.jpg" class="main"> 
                     </div>
                     <div class="box1">
-                        <img src="h54.jpg" class="main"> 
+                        <img src="hoahu64.jpg" class="main"> 
                     </div>
                 </div> 
             </div>
@@ -210,31 +210,31 @@
     </script>
     <div id="page2">
         <div class="inputform">
-            <form action="/submit5" method="post" onsubmit="sendEmail2(); return false;">
+            <form action="/submitoahu5" method="post">
                 <div class="formwrap1">
                     <div class="from1">
                         <label for="fullname">Full Name:</label><br>
-                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
-                        
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+                                    
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-                        
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                                    
                         <label for="phone">Phone Number:</label><br>
-                        <input type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br><br>
                     </div>
                     <div class="form2">
                         <label for="arrival_date">Check-In Date:</label><br>
-                        <input type="date" id="arrival_date" name="arrival_date"><br><br>
-                        
+                        <input type="date" id="arrival_date" name="arrival_date" required><br><br>
+                                    
                         <label for="leaving_date">Check-Out Date:</label><br>
-                        <input type="date" id="leaving_date" name="leaving_date"><br><br>
-                        
+                        <input type="date" id="leaving_date" name="leaving_date" required><br><br>
+                                    
                         <label for="num_members">Number of Members:</label><br>
-                        <input type="text" id="num_members" name="num_members" placeholder="Enter number of members"><br><br>
+                        <input type="number" id="num_members" name="num_members" placeholder="Enter number of members" min="1" required><br><br>
                     </div>           
                 </div>   
                 <button type="submit">Submit</button>
-            </form>
+            </form>            
             
             
             <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -253,7 +253,7 @@
                     Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
                     To : 'gauravchudasama333@gmail.com',
                     From : email,
-                    Subject : "New Booking enquiry for hotel Hotel Coral Reef",
+                    Subject : "New Booking enquiry for hotel AC by Marriott Hotel Honolulu",
                     Body : "Full Name: " + fullname +
                     "<br>Email: " + email +
                     "<br>Phone Number: " + phonenumber +

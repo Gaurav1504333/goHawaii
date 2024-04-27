@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hotel2.css">
+    <link rel="stylesheet" href="hotelsoahu.css">
     <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
-    <title>Sheraton Kauai Resort</title>
+    <title>Accommodations At O'ahu</title>
 </head>
 <body bgcolor="black">
     <navbar id="navbar">
@@ -33,7 +33,7 @@
             <div class="sub-menu" >
                 <div class="sm" >
                     <a href="" class="sml" id="top">Island Overview</a>
-                    <a href="" class="sml">Kaua'i</a>
+                    <a href="hotelskauai.html" class="sml">Kaua'i</a>
                     <a href="" class="sml">O'ahu</a>
                     <a href="" class="sml">Moloka'I</a>
                     <a href="" class="sml">Lana'i</a>
@@ -125,157 +125,84 @@
             sm4.classList.toggle("omo4");
         }
     </script>
-    <div class="hotelinfo">
-        <div class="hotelname">
-            <h1>Sheraton Kauai Resort</h1>
-        </div>
-        <div id="hoteldetails">
-            <p>Ocean-view resort with a poolside bar, near Poipu Beach</p>
-            <h2>Rating: 8.4/10</h2>
-            <br>
-            <h3>Popular amenities</h3>
-            <div class="amenities">
-                <div class="amenities1">
-                    <li>Pool</li>
-                    <li>Hot tub</li>
-                    <li>Pet-friendly</li>
-                    <li>Breakfast available</li>
-                    <li>Restaurant</li>
-                    <li>24/7 front desk</li>
-                </div>
-                <div class="amenities1">
-                    <li>Spa</li>
-                    <li>Air conditioning</li>
-                    <li>Gym</li>
-                    <li>Parking available</li>
-                    <li>Room service</li>
-                    <li>Laundry</li>
-                </div>
+
+
+
+
+    <div class="slider">
+        <div class="wrap">
+            <div class="content">
+                <h1>Checkout Accommodations At O'ahu</h1>
             </div>
-            <p id="Pricing">Pricing Per Night: 48,000Rs.</p>
-            <button onclick="scrollPage()">Book Now</button>
-            <script>
-                function scrollPage() {
-                    window.scrollBy({
-                        top: 500,
-                        left: 0,
-                        behavior: 'smooth' 
-                    });
-                }
-            </script>
         </div>
     </div>
-    <section id="page1">
-        <div class="p-wrap">
-            <img src="arrowr.png" alt="" id="backbtn2">
-            <div class="page">
+    <div id="p2">
+        <h1>Top Recommendations</h1>
+        <div class="gallery-wrap">
+            <img src="arrowr.png" alt="" id="backbtn">
+            <div class="gallery">
                 <div class="c">
                     <div class="box1">
-                        <img src="h21.jpg" class="main"> 
+                        <img src="hoteloahu1.png"> 
+                        <h4 class="h4">Ka La'i Waikiki Beach, LXR Hotels & Resorts</h4> 
+                        <p>Pricing Per Night: 31,000Rs.</p>
+                        <button><a href="hoteloahu1.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="h22.jpg"  class="main">
+                        <img src="hoteloahu2.png">
+                        <h4 class="h4" id="h42">Hyatt Regency Waikiki Beach Resort & Spa</h4> 
+                        <p>Pricing Per Night: 24,000Rs.</p>
+                        <button><a href="hoteloahu2.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="h23.jpg" class="main"> 
+                        <img src="hoteloahu3.png"> 
+                        <h4 class="h4" id="h43">The Kahala Hotel & Resort</h4> 
+                        <p>Pricing Per Night: 41,000Rs.</p>
+                        <button><a href="hoteloahu3.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="h24.jpg" class="main"> 
+                        <img src="hoteloahu4.png"> 
+                        <h4 class="h4" id="h44">The Ritz-Carlton Residences, Waikiki Beach</h4> 
+                        <p>Pricing Per Night: 57,000Rs.</p>
+                        <button><a href="hoteloahu4.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="h25.jpg" class="main"> 
+                        <img src="hoteloahu5.png"> 
+                        <h4 class="h4" id="h45">AC by Marriott Hotel Honolulu</h4> 
+                        <p>Pricing Per Night: 22,000Rs.</p>
+                        <button><a href="hoteloahu5.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="h26.jpg" class="main"> 
+                        <img src="hoteloahu6.png"> 
+                        <h4 class="h4" id="h46">Sheraton Waikiki Beach Resort</h4> 
+                        <p>Pricing Per Night: 33,000Rs.</p>
+                        <button><a href="hoteloahu6.html">More</a></button>
                     </div>
                 </div> 
             </div>
-            <img src="arrow.png" alt="" id="nextbtn2">
+            <img src="arrow.png" alt="" id="nextbtn">
         </div>
-    </section>
-    <script>
+        <script>
 
-        let scrollContainer = document.querySelector(".page");
-        let backbtn = document.getElementById("backbtn2");
-        let nextbtn= document.getElementById("nextbtn2");
-
-        scrollContainer.addEventListener("wheel", (evt) =>{
-            evt.preventDefault();
-            scrollcontainer.scrollLeft+= evt.deltaY;
-        });
-        nextbtn2.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior= "smooth";
-            scrollContainer.scrollLeft+=1140;
-        });
-
-        backbtn2.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior= "smooth";
-            scrollContainer.scrollLeft-=1140;
-        });    
-
-    </script>
-    <div id="page2">
-        <div class="inputform">
-            <form action="/submit2" method="post" onsubmit="sendEmail2(); return false;">
-                <div class="formwrap1">
-                    <div class="from1">
-                        <label for="fullname">Full Name:</label><br>
-                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
-                        
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-                        
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
-                    </div>
-                    <div class="form2">
-                        <label for="arrival_date">Check-In Date:</label><br>
-                        <input type="date" id="arrival_date" name="arrival_date"><br><br>
-                        
-                        <label for="leaving_date">Check-Out Date:</label><br>
-                        <input type="date" id="leaving_date" name="leaving_date"><br><br>
-                        
-                        <label for="num_members">Number of Members:</label><br>
-                        <input type="text" id="num_members" name="num_members" placeholder="Enter number of members"><br><br>
-                    </div>           
-                </div>   
-                <button type="submit">Submit</button>
-            </form>
-            
-            
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script>
-            function sendEmail2(){
-                var email = document.getElementById('email').value;
-                var phonenumber = document.getElementById('phone').value;
-                var fullname = document.getElementById('fullname').value;
-                var arrival_date = document.getElementById('arrival_date').value;
-                var leaving_date = document.getElementById('leaving_date').value;
-                var num_members = document.getElementById('num_members').value; // Retrieve number of members
-                
-                Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "gauravchudasama333@gmail.com",
-                    Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
-                    To : 'gauravchudasama333@gmail.com',
-                    From : email,
-                    Subject : "New Booking enquiry for hotel Sheraton Kauai Resort",
-                    Body : "Full Name: " + fullname +
-                    "<br>Email: " + email +
-                    "<br>Phone Number: " + phonenumber +
-                    "<br>Arrival Date: " + arrival_date +
-                    "<br>Leaving Date: " + leaving_date +
-                    "<br>Number of Members: " + num_members                
-                }).then(
-                    message => alert("Will let you know if room is available at your dates")
-                );
-            }
-        </script>
-        </div>
-    </div>
+            let scrollContainer = document.querySelector(".gallery");
+            let backbtn = document.getElementById("backbtn");
+            let nextbtn= document.getElementById("nextbtn");
     
-
-
+            scrollContainer.addEventListener("wheel", (evt) =>{
+                evt.preventDefault();
+                scrollcontainer.scrollLeft+= evt.deltaY;
+            });
+            nextbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft+=1084;
+            });
+    
+            backbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior= "smooth";
+                scrollContainer.scrollLeft-=1084;
+            });   
+        </script>
+    </div>
     <div id="divp7">
         <section id="page7">
             <div class="footer">

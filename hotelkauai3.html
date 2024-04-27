@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="acc.css">
+    <link rel="stylesheet" href="hotelkauai3.css">
     <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
-    <title>Directory of Hawaiʻi</title>
+    <title>OUTRIGGER Kaua'i Beach Resort & Spa</title>
 </head>
 <body bgcolor="black">
     <navbar id="navbar">
@@ -33,7 +33,7 @@
             <div class="sub-menu" >
                 <div class="sm" >
                     <a href="" class="sml" id="top">Island Overview</a>
-                    <a href="" class="sml">Kaua'i</a>
+                    <a href=""" class="sml">Kaua'i</a>
                     <a href="" class="sml">O'ahu</a>
                     <a href="" class="sml">Moloka'I</a>
                     <a href="" class="sml">Lana'i</a>
@@ -125,72 +125,152 @@
             sm4.classList.toggle("omo4");
         }
     </script>
-
-
-
-
-    <div class="slider">
-        <div class="wrap">
-            <div class="content">
-                <h1>Directory of Hawaiʻi</h1>
+    <div class="hotelinfo">
+        <div class="hotelname">
+            <h1>OUTRIGGER Kaua'i Resort & Spa</h1>
+        </div>
+        <div id="hoteldetails">
+            <p>Stylish resort on the shore with 4 outdoor swimming pools</p>
+            <h2>Rating: 8/10</h2>
+            <br>
+            <h3>Popular amenities</h3>
+            <div class="amenities">
+                <div class="amenities1">
+                    <li>Pool</li>
+                    <li>Hot tub</li>
+                    <li>Pet-friendly</li>
+                    <li>Breakfast available</li>
+                    <li>Restaurant</li>
+                    <li>24/7 front desk</li>
+                </div>
+                <div class="amenities1">
+                    <li>Spa</li>
+                    <li>Air conditioning</li>
+                    <li>Gym</li>
+                    <li>Parking available</li>
+                    <li>Room service</li>
+                    <li>Laundry</li>
+                </div>
             </div>
+            <p id="Pricing">Pricing Per Night: 25,000Rs.</p>
+            <button onclick="scrollPage()">Book Now</button>
+            <script>
+                function scrollPage() {
+                    window.scrollBy({
+                        top: 500,
+                        left: 0,
+                        behavior: 'smooth' 
+                    });
+                }
+            </script>
         </div>
     </div>
-    <div id="p2">
-        <h1>Hawaiian Islands Directory</h1>
-        <div class="gallery-wrap">
-            <img src="arrowr.png" alt="" id="backbtn">
-            <div class="gallery">
+    <section id="page1">
+        <div class="p-wrap">
+            <img src="arrowr.png" alt="" id="backbtn2">
+            <div class="page">
                 <div class="c">
                     <div class="box1">
-                        <a href="hotelskauai.html"><img src="acc1.png"> </a>
-                        <a href="hotelskauai.html"><h4 class="h4">Kaua'i</h4></a>
+                        <img src="h31.jpg" class="main"> 
                     </div>
                     <div class="box1">
-                        <a href="hotelsoahu.html"><img src="acc2.png"></a>
-                        <a href="hotelsoahu.html"><h4 class="h4" id="h42">O'ahu</h4> </a>
+                        <img src="h32.jpg"  class="main">
                     </div>
                     <div class="box1">
-                        <a href="hotelmolokai.html"><img src="acc3.png"></a>
-                        <a href="hotelmolokai.html"><h4 class="h4" id="h42">Moloka'i</h4> </a> 
+                        <img src="h33.jpg" class="main"> 
                     </div>
                     <div class="box1">
-                        <img src="acc4.png"> 
-                        <h4 class="h4" id="h44">Lana'i </h4> 
-                    </div>
-                    <div class="box1">
-                        <img src="acc5.png"> 
-                        <h4 class="h4" id="h45">Maui</h4> 
-                    </div>
-                    <div class="box1">
-                        <img src="acc6.png"> 
-                        <h4 class="h4" id="h46">Islands Of Hawai'i</h4> 
+                        <img src="h34.jpg" class="main"> 
                     </div>
                 </div> 
             </div>
-            <img src="arrow.png" alt="" id="nextbtn">
+            <img src="arrow.png" alt="" id="nextbtn2">
         </div>
-        <script>
+    </section>
+    <script>
 
-            let scrollContainer = document.querySelector(".gallery");
-            let backbtn = document.getElementById("backbtn");
-            let nextbtn= document.getElementById("nextbtn");
-    
-            scrollContainer.addEventListener("wheel", (evt) =>{
-                evt.preventDefault();
-                scrollcontainer.scrollLeft+= evt.deltaY;
-            });
-            nextbtn.addEventListener("click", ()=>{
-                scrollContainer.style.scrollBehavior= "smooth";
-                scrollContainer.scrollLeft+=1084;
-            });
-    
-            backbtn.addEventListener("click", ()=>{
-                scrollContainer.style.scrollBehavior= "smooth";
-                scrollContainer.scrollLeft-=1084;
-            });   
+        let scrollContainer = document.querySelector(".page");
+        let backbtn = document.getElementById("backbtn2");
+        let nextbtn= document.getElementById("nextbtn2");
+
+        scrollContainer.addEventListener("wheel", (evt) =>{
+            evt.preventDefault();
+            scrollcontainer.scrollLeft+= evt.deltaY;
+        });
+        nextbtn2.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior= "smooth";
+            scrollContainer.scrollLeft+=1140;
+        });
+
+        backbtn2.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior= "smooth";
+            scrollContainer.scrollLeft-=1140;
+        });    
+
+    </script>
+    <div id="page2">
+        <div class="inputform">
+            <form action="/submitkauai3" method="post">
+                <div class="formwrap1">
+                    <div class="from1">
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+                                    
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                                    
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br><br>
+                    </div>
+                    <div class="form2">
+                        <label for="arrival_date">Check-In Date:</label><br>
+                        <input type="date" id="arrival_date" name="arrival_date" required><br><br>
+                                    
+                        <label for="leaving_date">Check-Out Date:</label><br>
+                        <input type="date" id="leaving_date" name="leaving_date" required><br><br>
+                                    
+                        <label for="num_members">Number of Members:</label><br>
+                        <input type="number" id="num_members" name="num_members" placeholder="Enter number of members" min="1" required><br><br>
+                    </div>           
+                </div>   
+                <button type="submit">Submit</button>
+            </form>
+            
+            
+            
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+            function sendEmail2(){
+                var email = document.getElementById('email').value;
+                var phonenumber = document.getElementById('phone').value;
+                var fullname = document.getElementById('fullname').value;
+                var arrival_date = document.getElementById('arrival_date').value;
+                var leaving_date = document.getElementById('leaving_date').value;
+                var num_members = document.getElementById('num_members').value; // Retrieve number of members
+                
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "gauravchudasama333@gmail.com",
+                    Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+                    To : 'gauravchudasama333@gmail.com',
+                    From : email,
+                    Subject : "New Booking enquiry for hotel OUTRIGGER Kaua'i Beach Resort & Spa",
+                    Body : "Full Name: " + fullname +
+                    "<br>Email: " + email +
+                    "<br>Phone Number: " + phonenumber +
+                    "<br>Arrival Date: " + arrival_date +
+                    "<br>Leaving Date: " + leaving_date +
+                    "<br>Number of Members: " + num_members                
+                }).then(
+                    message => alert("Will let you know if room is available at your dates")
+                );
+            }
         </script>
+        </div>
     </div>
+    
+
+
     <div id="divp7">
         <section id="page7">
             <div class="footer">
@@ -253,20 +333,6 @@
                 message => alert("Thank you for subscribing")
             );
         }
-        // const submit = document.getElementsByClassName('email');
-        // submit.addEventListener('submit', (e)=>{
-        //         e.preventDefault();
-        //         console.log("clicked");
-        //         Email.send({
-        //             SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
-        //             To : 'gauravchudasama333@gmail.com',
-        //             From : document.getElementById('email').value,
-        //             Subject : "New Subscription",
-        //             Body : "And this is the body"
-        //             }).then(
-        //             message => alert(message)
-        //         );
-        // })
 
     </script>
 </body>

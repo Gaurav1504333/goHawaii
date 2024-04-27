@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hotel1.css">
+    <link rel="stylesheet" href="hotelkauai6.css">
     <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
-    <title>The Westin Princeville Ocean Resort Villas</title>
+    <title>Kauai Shores Hotel</title>
 </head>
 <body bgcolor="black">
     <navbar id="navbar">
@@ -33,7 +33,7 @@
             <div class="sub-menu" >
                 <div class="sm" >
                     <a href="" class="sml" id="top">Island Overview</a>
-                    <a href=""" class="sml">Kaua'i</a>
+                    <a href="" class="sml">Kaua'i</a>
                     <a href="" class="sml">O'ahu</a>
                     <a href="" class="sml">Moloka'I</a>
                     <a href="" class="sml">Lana'i</a>
@@ -127,10 +127,10 @@
     </script>
     <div class="hotelinfo">
         <div class="hotelname">
-            <h1>The Westin Princeville Ocean Resort Villas</h1>
+            <h1>Kauai Shores Hotel</h1>
         </div>
         <div id="hoteldetails">
-            <p>2641 Poipu Road, Poipu, Koloa, HI 96756, United States</p>
+            <p>420 Papaloa Rd, Kapaa, HI, 96746</p>
             <h2>Rating: 9/10</h2>
             <br>
             <h3>Popular amenities</h3>
@@ -152,7 +152,7 @@
                     <li>Laundry</li>
                 </div>
             </div>
-            <p id="Pricing">Pricing Per Night: 38,000Rs.</p>
+            <p id="Pricing">Pricing Per Night: 23,000Rs.</p>
             <button onclick="scrollPage()">Book Now</button>
             <script>
                 function scrollPage() {
@@ -171,22 +171,16 @@
             <div class="page">
                 <div class="c">
                     <div class="box1">
-                        <img src="h1.jpg" class="main"> 
+                        <img src="h61.jpg" class="main"> 
                     </div>
                     <div class="box1">
-                        <img src="h2.jpg"  class="main">
+                        <img src="h62.jpg"  class="main">
                     </div>
                     <div class="box1">
-                        <img src="h3.jpg" class="main"> 
+                        <img src="h63.jpg" class="main"> 
                     </div>
                     <div class="box1">
-                        <img src="h4.jpg" class="main"> 
-                    </div>
-                    <div class="box1">
-                        <img src="h5.jpg" class="main"> 
-                    </div>
-                    <div class="box1">
-                        <img src="h6.jpg" class="main"> 
+                        <img src="h64.jpg" class="main"> 
                     </div>
                 </div> 
             </div>
@@ -216,31 +210,32 @@
     </script>
     <div id="page2">
         <div class="inputform">
-            <form action="/submit" method="post" onsubmit="sendEmail2(); return false;">
+            <form action="/submitkauai6" method="post">
                 <div class="formwrap1">
                     <div class="from1">
                         <label for="fullname">Full Name:</label><br>
-                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
-                        
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+                                    
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-                        
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                                    
                         <label for="phone">Phone Number:</label><br>
-                        <input type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br><br>
                     </div>
                     <div class="form2">
                         <label for="arrival_date">Check-In Date:</label><br>
-                        <input type="date" id="arrival_date" name="arrival_date"><br><br>
-                        
+                        <input type="date" id="arrival_date" name="arrival_date" required><br><br>
+                                    
                         <label for="leaving_date">Check-Out Date:</label><br>
-                        <input type="date" id="leaving_date" name="leaving_date"><br><br>
-                        
+                        <input type="date" id="leaving_date" name="leaving_date" required><br><br>
+                                    
                         <label for="num_members">Number of Members:</label><br>
-                        <input type="text" id="num_members" name="num_members" placeholder="Enter number of members"><br><br>
+                        <input type="number" id="num_members" name="num_members" placeholder="Enter number of members" min="1" required><br><br>
                     </div>           
                 </div>   
                 <button type="submit">Submit</button>
             </form>
+            
             
             
             <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -259,7 +254,7 @@
                     Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
                     To : 'gauravchudasama333@gmail.com',
                     From : email,
-                    Subject : "New Booking enquiry for hotel The Westin Princeville Ocean Resort Villas",
+                    Subject : "New Booking enquiry for Kauai Shores Hotel",
                     Body : "Full Name: " + fullname +
                     "<br>Email: " + email +
                     "<br>Phone Number: " + phonenumber +

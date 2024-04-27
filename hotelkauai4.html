@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hotel4.css">
+    <link rel="stylesheet" href="hotelkauai4.css">
     <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
     <title>Kauai Inn</title>
 </head>
@@ -210,31 +210,32 @@
     </script>
     <div id="page2">
         <div class="inputform">
-            <form action="/submit4" method="post" onsubmit="sendEmail2(); return false;">
+            <form action="/submitkauai4" method="post">
                 <div class="formwrap1">
                     <div class="from1">
                         <label for="fullname">Full Name:</label><br>
-                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
-                        
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+                                    
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-                        
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                                    
                         <label for="phone">Phone Number:</label><br>
-                        <input type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br><br>
                     </div>
                     <div class="form2">
                         <label for="arrival_date">Check-In Date:</label><br>
-                        <input type="date" id="arrival_date" name="arrival_date"><br><br>
-                        
+                        <input type="date" id="arrival_date" name="arrival_date" required><br><br>
+                                    
                         <label for="leaving_date">Check-Out Date:</label><br>
-                        <input type="date" id="leaving_date" name="leaving_date"><br><br>
-                        
+                        <input type="date" id="leaving_date" name="leaving_date" required><br><br>
+                                    
                         <label for="num_members">Number of Members:</label><br>
-                        <input type="text" id="num_members" name="num_members" placeholder="Enter number of members"><br><br>
+                        <input type="number" id="num_members" name="num_members" placeholder="Enter number of members" min="1" required><br><br>
                     </div>           
                 </div>   
                 <button type="submit">Submit</button>
             </form>
+            
             
             
             <script src="https://smtpjs.com/v3/smtp.js"></script>
