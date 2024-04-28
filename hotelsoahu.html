@@ -139,18 +139,17 @@
     <div id="p2">
         <h1>Top Recommendations</h1>
         <div class="gallery-wrap">
-            <img src="arrowr.png" alt="" id="backbtn">
             <div class="gallery">
                 <div class="c">
                     <div class="box1">
                         <img src="hoteloahu1.png"> 
-                        <h4 class="h4">Ka La'i Waikiki Beach, LXR Hotels & Resorts</h4> 
-                        <p>Pricing Per Night: 31,000Rs.</p>
-                        <button><a href="hoteloahu1.html">More</a></button>
+                        <h4 class="hotel1h4">Ka La'i Waikiki Beach, LXR Hotels & Resorts</h4> 
+                        <p class="hotel1">Pricing Per Night: 31,000Rs.</p>
+                        <button class="hotel1"><a href="hoteloahu1.html">More</a></button>
                     </div>
                     <div class="box1">
                         <img src="hoteloahu2.png">
-                        <h4 class="h4" id="h42">Hyatt Regency Waikiki Beach Resort & Spa</h4> 
+                        <h4 class="h4" id="h42">Hyatt Regency Waikiki Beach Resort</h4> 
                         <p>Pricing Per Night: 24,000Rs.</p>
                         <button><a href="hoteloahu2.html">More</a></button>
                     </div>
@@ -160,48 +159,9 @@
                         <p>Pricing Per Night: 41,000Rs.</p>
                         <button><a href="hoteloahu3.html">More</a></button>
                     </div>
-                    <div class="box1">
-                        <img src="hoteloahu4.png"> 
-                        <h4 class="h4" id="h44">The Ritz-Carlton Residences, Waikiki Beach</h4> 
-                        <p>Pricing Per Night: 57,000Rs.</p>
-                        <button><a href="hoteloahu4.html">More</a></button>
-                    </div>
-                    <div class="box1">
-                        <img src="hoteloahu5.png"> 
-                        <h4 class="h4" id="h45">AC by Marriott Hotel Honolulu</h4> 
-                        <p>Pricing Per Night: 22,000Rs.</p>
-                        <button><a href="hoteloahu5.html">More</a></button>
-                    </div>
-                    <div class="box1">
-                        <img src="hoteloahu6.png"> 
-                        <h4 class="h4" id="h46">Sheraton Waikiki Beach Resort</h4> 
-                        <p>Pricing Per Night: 33,000Rs.</p>
-                        <button><a href="hoteloahu6.html">More</a></button>
-                    </div>
                 </div> 
             </div>
-            <img src="arrow.png" alt="" id="nextbtn">
         </div>
-        <script>
-
-            let scrollContainer = document.querySelector(".gallery");
-            let backbtn = document.getElementById("backbtn");
-            let nextbtn= document.getElementById("nextbtn");
-    
-            scrollContainer.addEventListener("wheel", (evt) =>{
-                evt.preventDefault();
-                scrollcontainer.scrollLeft+= evt.deltaY;
-            });
-            nextbtn.addEventListener("click", ()=>{
-                scrollContainer.style.scrollBehavior= "smooth";
-                scrollContainer.scrollLeft+=1084;
-            });
-    
-            backbtn.addEventListener("click", ()=>{
-                scrollContainer.style.scrollBehavior= "smooth";
-                scrollContainer.scrollLeft-=1084;
-            });   
-        </script>
     </div>
     <div id="divp7">
         <section id="page7">

@@ -139,69 +139,29 @@
     <div id="p2">
         <h1>Top Recommendations</h1>
         <div class="gallery-wrap">
-            <img src="arrowr.png" alt="" id="backbtn">
             <div class="gallery">
                 <div class="c">
                     <div class="box1">
-                        <img src="hotel1.png"> 
-                        <h4 class="h4">The Westin Princeville Ocean Resort Villas</h4> 
-                        <p>Pricing Per Night: 38,000Rs.</p>
-                        <button><a href="hotel1.html">More</a></button>
+                        <img src="hotelkauai1.png"> 
+                        <h4 class="hotel1h4">The Westin Princeville Ocean Resort Villas</h4> 
+                        <p class="hotel1">Pricing Per Night: 38,000Rs.</p>
+                        <button class="hotel1"><a href="hotelkauai1.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="hotel2.png">
+                        <img src="hotelkauai2.png">
                         <h4 class="h4" id="h42">Sheraton Kauai Resort</h4> 
                         <p>Pricing Per Night: 48,000Rs.</p>
-                        <button><a href="hotel2.html">More</a></button>
+                        <button><a href="hotelkauai2.html">More</a></button>
                     </div>
                     <div class="box1">
-                        <img src="hotel3.png"> 
+                        <img src="hotelkauai3.png"> 
                         <h4 class="h4" id="h43">OUTRIGGER Kaua'i Beach Resort & Spa</h4> 
                         <p>Pricing Per Night: 27,000Rs.</p>
-                        <button><a href="hotel3.html">More</a></button>
-                    </div>
-                    <div class="box1">
-                        <img src="hotel4.png"> 
-                        <h4 class="h4" id="h44">Kauai Inn</h4> 
-                        <p>Pricing Per Night: 18,000Rs.</p>
-                        <button><a href="hotel4.html">More</a></button>
-                    </div>
-                    <div class="box1">
-                        <img src="hotel5.png"> 
-                        <h4 class="h4" id="h45">Hotel Coral Reef</h4> 
-                        <p>Pricing Per Night: 13,000Rs.</p>
-                        <button><a href="hotel5.html">More</a></button>
-                    </div>
-                    <div class="box1">
-                        <img src="hotel6.png"> 
-                        <h4 class="h4" id="h46">Kauai Shores Hotel</h4> 
-                        <p>Pricing Per Night: 23,000Rs.</p>
-                        <button><a href="hotel6.html">More</a></button>
+                        <button><a href="hotelkauai3.html">More</a></button>
                     </div>
                 </div> 
             </div>
-            <img src="arrow.png" alt="" id="nextbtn">
         </div>
-        <script>
-
-            let scrollContainer = document.querySelector(".gallery");
-            let backbtn = document.getElementById("backbtn");
-            let nextbtn= document.getElementById("nextbtn");
-    
-            scrollContainer.addEventListener("wheel", (evt) =>{
-                evt.preventDefault();
-                scrollcontainer.scrollLeft+= evt.deltaY;
-            });
-            nextbtn.addEventListener("click", ()=>{
-                scrollContainer.style.scrollBehavior= "smooth";
-                scrollContainer.scrollLeft+=1084;
-            });
-    
-            backbtn.addEventListener("click", ()=>{
-                scrollContainer.style.scrollBehavior= "smooth";
-                scrollContainer.scrollLeft-=1084;
-            });   
-        </script>
     </div>
     <div id="divp7">
         <section id="page7">

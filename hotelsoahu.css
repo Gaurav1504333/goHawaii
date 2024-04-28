@@ -308,9 +308,9 @@
     font-size: 2rem;
     font-weight: 100;
     position:relative;
-    left:86vh;
     top: 64px;
-    display: inline;
+    left: 88.5vh;
+    display: inline-block;
     color: white;
 }
 #p2{
@@ -329,8 +329,7 @@
     width:100%;
     display: flex;
     overflow-x:scroll ;
-    margin: 0px 8px 0px -8px;
-    
+    margin: 0px 60px 0px 60px;
 }
 .gallery::-webkit-scrollbar{
     display: none;
@@ -351,19 +350,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 8px 0px 8px;
     position: relative;
     top: 24px;
-}
-#backbtn,#nextbtn{
-    height:5%;
-    width: 5%;
-    padding: 0px 8px 0px 8px;
-    cursor: pointer;
-    z-index: 999;
-}
-#backbtn:hover,#nextbtn:hover{
-    filter:invert(100%);
 }
 .gallery .box1:hover{
     cursor: pointer;
@@ -378,6 +366,19 @@
     font-family:displace;
     margin-top: 8px;
     color: white;
+}
+.hotel1{
+    position: relative !important;
+    right: 18px !important;
+    color: black;
+}
+.gallery .box1 .hotel1h4{
+    text-align:center;
+    font-family:displace;
+    margin-top: 8px;
+    color: white;
+    position: relative !important;
+    right: 18px !important;
 }
 .gallery .box1 p{
     font-family:oscl;
