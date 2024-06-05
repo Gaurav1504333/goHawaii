@@ -1,0 +1,311 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/zara" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+<style>
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family:opensans;
+    src: url(OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family:aloha;
+    src: url(AlohaDemo-ya0V.ttf);
+}
+@font-face {
+    font-family:museosans;
+    src: url(MuseoSans_700.otf);
+}
+@font-face {
+    font-family:os2;
+    src:url(OpenSans_Condensed-Light.ttf);
+}
+@font-face {
+    font-family:displace;
+    src:url(Displace20-Black.ttf);
+}
+@font-face {
+    font-family:oshc;
+    src:url(OpenSans_Condensed-Bold.ttf);
+}
+@font-face {
+    font-family: ossc;
+    src: url(OpenSans_SemiCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: oscsi;
+    src: url(OpenSans_Condensed-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: oscsb;
+    src: url(OpenSans_Condensed-SemiBold.ttf);
+}
+@font-face {
+    font-family: oscr;
+    src: url(OpenSans_Condensed-Regular.ttf);
+}
+@font-face {
+    font-family: oscl;
+    src: url(OpenSans_Condensed-Light.ttf);
+}
+@font-face {
+    font-family: osscl;
+    src: url(OpenSans_SemiCondensed-Light.ttf);
+}
+@font-face {
+    font-family: osscb;
+    src: url(OpenSans_SemiCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: osscl;
+    src: url(OpenSans_SemiCondensed-Light.ttf);
+}
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    border: 0px;
+}
+.sticky{
+    position:sticky !important;
+    top:0px !important;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index:1;
+    transition: 0.6s;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    font-family:opensans;
+    position: relative;
+    justify-content: space-between;
+    padding:0px 16px 0px 16px;
+    transition:0.6s ;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style:none;
+    padding: 0px 16px 0px 16px;
+}
+.l1{
+    width:95%;
+    display:block;
+    margin:auto;
+    background-color: white;
+}
+#navbar a:hover{
+    background-color: rgb(88, 88, 88,0.8);
+    color:rgb(0, 0, 0);
+    border-radius: 8px;
+}
+#navbar a{
+    font-size: 0.75rem;
+    display:block;
+    padding: 4px 6px 4px 6px;
+    border-radius: 12px;
+    margin:4px 4px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.search{
+    display:flex;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    height:3rem;
+    margin: 8px 8px;
+    position: relative;
+    right: 24px;
+}
+.logo img:hover{
+    filter:invert(100%);
+    cursor: pointer;
+}
+.search img{
+    position: relative;
+    top:7px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background:none;
+    color:rgb(255, 255, 255);
+    margin-right: 12px;
+    padding: 2px;
+}
+.search img:hover{
+    background-color: rgb(88, 88, 88);
+    border-radius: 12px;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top:50px;
+    left:36px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    font-family:opensans;
+    font-size: 0.75rem;
+    cursor: pointer;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 8px;
+    z-index: 999;
+}
+.sub-menu-wrap.om{
+    max-height: 250px;
+}
+.sub-menu-wrap.omo{
+    max-height: 0px;
+}
+.sml{
+    display: flex;
+    align-items: center ;
+}
+.sub-menu-wrap #top{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.sub-menu-wrap2{
+    position: absolute;
+    top:50px;
+    left:128px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    font-family:opensans;
+    font-size: 0.75rem;
+    cursor: pointer;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 8px;
+    z-index: 999;
+}
+.sub-menu-wrap2 #top{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.sub-menu-wrap2.om2{
+    max-height: 270px;
+}
+.sub-menu-wrap2.omo2{
+    max-height: 0px;
+}
+
+.sub-menu-wrap3{
+    position: absolute;
+    top:50px;
+    left:255px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    font-family:opensans;
+    font-size: 0.75rem;
+    cursor: pointer;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 8px;
+    z-index: 999;
+}
+.sub-menu-wrap3 #top{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.sub-menu-wrap3.om3{
+    max-height: 280px;
+}
+.sub-menu-wrap4{
+    position: absolute;
+    top:50px;
+    left:870px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    font-family:opensans;
+    font-size: 0.75rem;
+    cursor: pointer;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 8px;
+    z-index: 999;
+}
+.sub-menu-wrap4 #top{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.sub-menu-wrap4.om4{
+    max-height: 280px;
+}
+.sub-menu-wrap4.omo4{
+    max-height: 0px;
+}
+.pg1::before{
+    content:"";
+    background:url('planbg.png') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    filter:blur(3px);
+    top: -8px;
+} 
+.formwrap1{
+    background-color: rgba(108, 108, 108, 0.3);
+    padding: 40px 64px 40px 64px;
+    border-radius: 32px;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+.inputform{
+    position: relative;
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    top: 64px;
+    left: -48px;
+}
+.inputform label{
+    color: white;
+    font-family: oscr;
+    font-size: 1.2rem;
+}
+.inputform input{
+    color: white;
+    font-family: oscr;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    border: 0px;
+}
+.inputform button{
+    background-color: rgb(255, 255, 255,0.9);
+    padding: 2px 32px 2px 32px;
+    font-family: oshc;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    left: 40px;
+}
+.inputform button:hover{
+    filter: invert(100%);
+    border: 0px;
+}
