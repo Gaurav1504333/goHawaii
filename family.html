@@ -23,8 +23,8 @@
             <img src="logo.png" alt="home">
         </div>
         <ul>
-            <li><a href="#" onclick="togglemenu4()">Plan Your Trip</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" onclick="togglemenu4()">Must know</a></li>
+            <li><a href="{{ url_for('index') }}">Plan your trip</a></li>
             <!-- <div class="search">
                 <img src="search.png" alt="">
             </div> -->
@@ -103,26 +103,14 @@
         function togglemenu(){
             sm.classList.toggle("om");
         }
-        function menuout(){
-            sm.classList.toggle("omo");
-        }
         function togglemenu2(){
             sm2.classList.toggle("om2");
-        }
-        function menuout2(){
-            sm2.classList.toggle("omo2");
         }
         function togglemenu3(){
             sm3.classList.toggle("om3");
         }
-        function menuout3(){
-            sm3.classList.toggle("omo3");
-        }
         function togglemenu4(){
             sm4.classList.toggle("om4");
-        }
-        function menuout4(){
-            sm4.classList.toggle("omo4");
         }
     </script>
 
