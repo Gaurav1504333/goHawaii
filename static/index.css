@@ -218,7 +218,7 @@
     overflow: hidden;
     transition: max-height 0.5s;
     border-radius: 8px;
-    z-index: 999;
+    z-index:99999;
 }
 .sub-menu-wrap3 #top{
     font-size: 1.5rem;
@@ -240,7 +240,7 @@
     overflow: hidden;
     transition: max-height 0.5s;
     border-radius: 8px;
-    z-index: 999;
+    z-index:9999;
 }
 .sub-menu-wrap4 #top{
     font-size: 1.5rem;
@@ -262,14 +262,17 @@ h1{
     margin-top: 32px;
 }
 .pg1::before{
-    content:"";
+    content: "";
     background-image: url('/static/planbg.png');
-    position:absolute;
-    height:100%;
-    width:100%;
-    z-index:-1;
-    filter:blur(3px);
-    top: -8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(3px);
+    top: -8px;    
 } 
 .formwrap1{
     background-color: rgba(108, 108, 108, 0.35);
@@ -304,7 +307,7 @@ h1{
     border: 0px;
     cursor: pointer;
     position: relative;
-    left: 108px;
+    left: 64px;
 }
 .inputform button:hover{
     filter: invert(100%);
