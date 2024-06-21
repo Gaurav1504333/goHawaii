@@ -48,7 +48,7 @@ def index():
 
 @app.route('/recommend', methods=['POST'])
 def recommend():
-    user_type = request.form['user_type']
+    user_type = request.form['uzser_type']
     interest = request.form['interest']
     recommended_places = recommend_places(user_type, interest)
     return render_template('recommend.html', user_type=user_type, interest=interest, recommended_places=recommended_places)
