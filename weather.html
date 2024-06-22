@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
+    <title>Weather</title>
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <!-- <ul>
+            <li><a href="#" onclick="togglemenu()" onmouseover="togglemenu()" onmouseout="menuout()" >Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()" onmouseover="togglemenu2()" onmouseout="menuout2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()" onmouseover="togglemenu3()" onmouseout="menuout3()">Culture</a></li>
+        </ul> -->
+        <ul>
+            <li><a href="#" onclick="togglemenu()">Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="#" onclick="togglemenu4()">Must know</a></li>
+            <li><a href="index.html">Plan your trip</a></li>
+            <!-- <div class="search">
+                <img src="search.png" alt="">
+            </div> -->
+        </ul>
+        <div class="sub-menu-wrap" id="sm">
+            <div class="sub-menu" >
+                <div class="sm" >
+                    <a href="" class="sml" id="top">Island Overview</a>
+                    <a href="" class="sml">Kaua'i</a>
+                    <a href="" class="sml">O'ahu</a>
+                    <a href="" class="sml">Moloka'I</a>
+                    <a href="" class="sml">Lana'i</a>
+                    <a href="" class="sml">Maui</a>
+                    <a href="" class="sml">Islands</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap2" id="sm2">
+            <div class="sub-menu2">
+                <div class="sm2" >
+                    <a href="" class="sm2" id="top">Experiences overview</a>
+                    <a href="" class="sm2">Adventure</a>
+                    <a href="" class="sm2">Culinary</a>
+                    <a href="" class="sm2">Eco-Tourism</a>
+                    <a href="" class="sm2">Family fun</a>
+                    <a href="" class="sm2">Golf</a>
+                    <a href="" class="sm2">Heritage Sites</a>
+                    <a href="" class="sm2">Relaxation & Romance</a>
+                    <a href="" class="sm2">Sightseeing</a>
+                    <a href="" class="sm2">Voluntourism</a>
+                    <a href="" class="sm2">Wedding & Honeymoon</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap3" id="sm3">
+            <div class="sub-menu3">
+                <div class="sm3">
+                    <a href="" class="sm3" id="top">Culture overview</a>
+                    <a href="" class="sm3">History</a>
+                    <a href="" class="sm3">Traditions</a>
+                    <a href="" class="sm3">Hula</a>
+                    <a href="" class="sm3">Music</a>
+                    <a href="" class="sm3">Luau</a>
+                    <a href="" class="sm3">Hawaiian Launguage</a>
+                    <a href="" class="sm3">Art</a>
+                    <a href="" class="sm3">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap4" id="sm4">
+            <div class="sub-menu4">
+                <div class="sm4">
+                    <a href="" class="sm4" id="top">Planning overview</a>
+                    <a href="" class="sm4">Safety</a>
+                    <a href="" class="sm4">Travel Tips</a>
+                    <a href="" class="sm4">Special Alert/Notices</a>
+                    <a href="" class="sm4">Weather</a>
+                    <a href="" class="sm4">FAQ</a>
+                    <a href="" class="sm4">International Travelers</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                let nb= document.querySelector("navbar");
+                nb.classList.toggle("sticky" , window.scrollY > 0);
+            })
+        </script>
+    </navbar>
+    <script>
+        let sm = document.getElementById("sm");
+        let sm2 = document.getElementById("sm2");
+        let sm3 = document.getElementById("sm3");
+
+
+        function togglemenu(){
+            sm.classList.toggle("om");
+        }
+        function togglemenu2(){
+            sm2.classList.toggle("om2");
+        }
+        function togglemenu3(){
+            sm3.classList.toggle("om3");
+        }
+        function togglemenu4(){
+            sm4.classList.toggle("om4");
+        }
+    </script>
+
+
+    <div class="home">
+        <div class="wrap">
+            <div class="content">
+                <h1>Climate in The Hawaiian Islands</h1>
+                <p>
+                    Weather in The Hawaiian Islands is very consistent, with only minor changes in 
+                    temperature throughout the year. There are really only two seasons in Hawaiʻi: 
+                    summer (kau) from May to October and winter (hoʻoilo) from November to April. The 
+                    average daytime summer temperature at sea level is 85° F (29.4° C), while the average 
+                    daytime winter temperature is 78° (25.6° C). Temperatures at night are approximately 
+                    10° F lower than the daytime.
+
+                </p>
+                <h2>Temperature & Climate Zones</h2>
+                <p>
+                    The islands are an incredible collection of diverse micro-environments, each with its 
+                    own unique weather plants and animals. As a result of the shielding effect of volcanic
+                    mountains and the differences in weather at various elevations, you can find tropical 
+                    rainforests, cool alpine regions, arid deserts and sunny beaches—all within the span 
+                    of just a few miles
+
+                </p>
+                <h2>Rainfall & Trade Winds</h2>
+                <p>
+                    Throughout the year, Hawaiian weather patterns are affected primarily by high-pressure 
+                    zones in the north Pacific that pump cool, moist trade winds down onto the islands’ 
+                    northeastern slopes. These winds are forced upslope by the mountain heights, where 
+                    their moisture condenses into clouds that produce rain. Most of the rain falls in the 
+                    mountains and valleys on the windward (northeastern) side of the islands. It is this 
+                    weather phenomenon that creates Hawaiʻi’s rich, green, tropical environment.
+
+
+                </p>
+                <p>The wettest months are from November to March, but winter rains do not generally 
+                    disrupt vacation plans, since the weather is very localized. This means that if it 
+                    is raining where you are, there is almost always a sunny spot to be found around the 
+                    coast.
+                </p>
+                <h2>Water & Surf Conditions</h2>
+                <p>
+                    The Hawaiian Islands’ near-shore water temperatures remain comfortable throughout 
+                    the year. The average water temperature is 74° F (23.3° C), with a summer high of 
+                    80° F (26.7° C). Wave action varies dramatically between island coasts and seasons. 
+                    Summer waters are typically gentle on all beaches. During the winter on many north 
+                    shore beaches, Pacific storms drive ocean swells towards the islands, creating The 
+                    Hawaiian Islands’ legendary big waves.
+                </p>
+                <p>
+                    Wave conditions are often very localized, so if the waves are too big on your beach, 
+                    you can usually find calmer water at a more sheltered beach. Strong currents can make 
+                    any beach unsafe at any time during the year, particularly in the winter. Ask your 
+                    hotel staff or a lifeguard about ocean currents or look for warning flags and posted 
+                    beach conditions.
+                </p>
+                <h2>Hawaiʻi's Mountains & Volcanoes</h2>
+                <p>
+                    Many visitors are drawn to the natural beauty found in higher elevations such as 
+                    Kōkeʻe on Kauaʻi, Haleakalā on Maui or Kīlauea on the island of Hawaiʻi. Temperatures 
+                    in these higher locations drop 3.5° F for every 1,000 feet above sea level that you 
+                    climb, so dress appropriately with pants and several layers of clothing. At an 
+                    elevation of 10,023 feet, the summit of Haleakalā can be as much as 30° F cooler than 
+                    resort areas on the coast.
+                </p>
+                <p>
+                    Also note that because of these high elevations, there is less protection from the 
+                    sun's powerful UV rays, so come prepared with sunblock and sunglasses.
+                </p>
+                <h2>VOG (Volcanic Fog)</h2>
+                <p>
+                    Vog is the local term for "volcanic fog" and it describes the hazy air pollution 
+                    \that occasionally hangs over the islands. Vog is caused when sulfur dioxide and 
+                    other gasses from Kīlauea's Halemaʻumaʻu Crater (on the island of Hawaiʻi) mix with 
+                    moisture in the air and sunlight. Under extreme conditions—when the volcano is active 
+                    and the winds carry the fumes north to the rest of the island chain—vog can be 
+                    hazardous to plants, animals and humans. The most common effects are headaches, 
+                    watery eyes and breathing difficulties. These effects can be especially pronounced in 
+                    people with respiratory conditions and young children. It is not advisable to exercise 
+                    or participate in strenuous outdoor activities when the vog is very heavy. Depending on 
+                    your personal sensitivity, you may want to learn more about vog before traveling to 
+                    Hawaiʻi Island and visiting Hawaiʻi Volcanoes National Park.
+                </p>
+                <p>
+                    Not all hazy conditions are caused by vog. If you see a white mist along the coast, 
+                    it could simply be salt spray hanging in the air. Or if it's hazy along the mountains 
+                    in the morning, chances are you're looking at moisture in the air from the updrafts 
+                    along the ridges.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="divp7">
+        <section id="page7">
+            <div class="footer">
+                <div id="ptag">
+                    <p>Download Our App</p>
+                </div>
+                <div id="as">
+                    <img src="appstore.png" alt="appstore">
+                </div>
+                <div id="ps">
+                    <img src="playstore.png" alt="playstore">
+                </div>
+            </div>
+            <div class="f">
+                <div class="f1">
+                    <p>MEETINGS & CONVENTIONS</p>
+                    <p>TRAVEL TRADE</p>
+                    <p>MEDIA</p>
+                    <p>EVENTS & FESTIVALS </p>
+                    <p>OFFICIAL VISITORS' GUIDE</p>
+                </div>
+                <div class="f2">
+                    <p>CORPORATE INFORMATION</p>
+                    <p>TRAVELERS WITH DISABILITIES</p>
+                    <p>LGBTQ+</p>
+                    <p>TRAVEL TIPS</p>
+                </div>
+            </div>
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <div class="input">
+                    <input type="email" id="email" placeholder="enter your email">
+                    <button type="submit">sign up</button>
+                </div>
+            </form>
+            <hr class="l2" >
+            <p id="l">© 2023 Hawai'i Tourism Authority</p>
+            <div class="fl">
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>Terms & Policy</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "gauravchudasama333@gmail.com",
+            Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+            To : 'gauravchudasama333@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "new subscription",
+            Body : "Email: " + document.getElementById('email').value
+                +"<br> Has Subscribed"
+            }).then(
+                message => alert("Thank you for subscribing")
+            );
+        }
+        // const submit = document.getElementsByClassName('email');
+        // submit.addEventListener('submit', (e)=>{
+        //         e.preventDefault();
+        //         console.log("clicked");
+        //         Email.send({
+        //             SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
+        //             To : 'gauravchudasama333@gmail.com',
+        //             From : document.getElementById('email').value,
+        //             Subject : "New Subscription",
+        //             Body : "And this is the body"
+        //             }).then(
+        //             message => alert(message)
+        //         );
+        // })
+    
+    </script>
+    </div>
+    
+</body>
+</html>

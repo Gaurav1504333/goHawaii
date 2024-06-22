@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="traveltips.css">
+    <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
+    <title>Travel Tips</title>
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <!-- <ul>
+            <li><a href="#" onclick="togglemenu()" onmouseover="togglemenu()" onmouseout="menuout()" >Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()" onmouseover="togglemenu2()" onmouseout="menuout2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()" onmouseover="togglemenu3()" onmouseout="menuout3()">Culture</a></li>
+        </ul> -->
+        <ul>
+            <li><a href="#" onclick="togglemenu()">Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="#" onclick="togglemenu4()">Must know</a></li>
+            <li><a href="index.html">Plan your trip</a></li>
+            <!-- <div class="search">
+                <img src="search.png" alt="">
+            </div> -->
+        </ul>
+        <div class="sub-menu-wrap" id="sm">
+            <div class="sub-menu" >
+                <div class="sm" >
+                    <a href="" class="sml" id="top">Island Overview</a>
+                    <a href="" class="sml">Kaua'i</a>
+                    <a href="" class="sml">O'ahu</a>
+                    <a href="" class="sml">Moloka'I</a>
+                    <a href="" class="sml">Lana'i</a>
+                    <a href="" class="sml">Maui</a>
+                    <a href="" class="sml">Islands</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap2" id="sm2">
+            <div class="sub-menu2">
+                <div class="sm2" >
+                    <a href="" class="sm2" id="top">Experiences overview</a>
+                    <a href="" class="sm2">Adventure</a>
+                    <a href="" class="sm2">Culinary</a>
+                    <a href="" class="sm2">Eco-Tourism</a>
+                    <a href="" class="sm2">Family fun</a>
+                    <a href="" class="sm2">Golf</a>
+                    <a href="" class="sm2">Heritage Sites</a>
+                    <a href="" class="sm2">Relaxation & Romance</a>
+                    <a href="" class="sm2">Sightseeing</a>
+                    <a href="" class="sm2">Voluntourism</a>
+                    <a href="" class="sm2">Wedding & Honeymoon</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap3" id="sm3">
+            <div class="sub-menu3">
+                <div class="sm3">
+                    <a href="" class="sm3" id="top">Culture overview</a>
+                    <a href="" class="sm3">History</a>
+                    <a href="" class="sm3">Traditions</a>
+                    <a href="" class="sm3">Hula</a>
+                    <a href="" class="sm3">Music</a>
+                    <a href="" class="sm3">Luau</a>
+                    <a href="" class="sm3">Hawaiian Launguage</a>
+                    <a href="" class="sm3">Art</a>
+                    <a href="" class="sm3">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap4" id="sm4">
+            <div class="sub-menu4">
+                <div class="sm4">
+                    <a href="" class="sm4" id="top">Planning overview</a>
+                    <a href="" class="sm4">Safety</a>
+                    <a href="" class="sm4">Travel Tips</a>
+                    <a href="" class="sm4">Special Alert/Notices</a>
+                    <a href="" class="sm4">Weather</a>
+                    <a href="" class="sm4">FAQ</a>
+                    <a href="" class="sm4">International Travelers</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                let nb= document.querySelector("navbar");
+                nb.classList.toggle("sticky" , window.scrollY > 0);
+            })
+        </script>
+    </navbar>
+    <script>
+        let sm = document.getElementById("sm");
+        let sm2 = document.getElementById("sm2");
+        let sm3 = document.getElementById("sm3");
+
+
+        function togglemenu(){
+            sm.classList.toggle("om");
+        }
+        function togglemenu2(){
+            sm2.classList.toggle("om2");
+        }
+        function togglemenu3(){
+            sm3.classList.toggle("om3");
+        }
+        function togglemenu4(){
+            sm4.classList.toggle("om4");
+        }
+    </script>
+
+
+    <div class="home">
+        <div class="wrap">
+            <div class="content">
+                <h1>Hawaiian Islands Travel Tips</h1>
+                <p>
+                    You are likely embarking on planning a trip to Hawaiʻi. We want to share our deep 
+                    knowledge with you to ensure you enjoy every moment and can truly let go and emerse 
+                    yourself in all that the Hawaiian Islands have to offer. You see, this is not just 
+                    another vacation! If you are educated on how to understand the relationship between 
+                    the natural beauty and rich culture that makes Hawaiʻi unique, you will naturally 
+                    want to help keep it sacred and protected for generations to come. We invite you 
+                    to take a few moments to explore...
+                </p>
+                <h2>Astute Rentals</h2>
+                <p>
+                    Vacation rentals are a popular type of accommodation, but it's important to beware 
+                    of false advertising and make sure you're staying in a legal, permitted property. 
+                    Illegal vacation rentals leave you no recourse if something goes wrong or your deposit 
+                    is taken, and they do not contribute their fair share to our communities.
+                </p>
+                <h2>Weather and Report</h2>
+                <p>
+                    The Hawaiian Islands are known for their beautiful weather year round, but conditions 
+                    can differ at various elevations, so we want you to be prepared when you arrive. Make 
+                    sure to check local weather and surf reports before going out to hike, surf, or for a 
+                    day at the beach. National Weather Service Forecast Office - Hawaiʻi 
+                    <br>Phone: (808) 973-5286.
+
+                </p>
+                <h2>Hawaiʻi Emergency Management Agency</h2>
+                <p>According to the Hawaiʻi Biological Survey, Hawaiʻi is the “endangered species 
+                    capital of the world,” with more endangered or threatened species per square mile 
+                    than any other place on the planet. Because we need to protect our unique environment 
+                    and fragile ecosystems, flying to Hawaiʻi requires a level of screening unlike many 
+                    other destinations.
+            </div>
+        </div>
+    </div>
+    <div id="divp7">
+        <section id="page7">
+            <div class="footer">
+                <div id="ptag">
+                    <p>Download Our App</p>
+                </div>
+                <div id="as">
+                    <img src="appstore.png" alt="appstore">
+                </div>
+                <div id="ps">
+                    <img src="playstore.png" alt="playstore">
+                </div>
+            </div>
+            <div class="f">
+                <div class="f1">
+                    <p>MEETINGS & CONVENTIONS</p>
+                    <p>TRAVEL TRADE</p>
+                    <p>MEDIA</p>
+                    <p>EVENTS & FESTIVALS </p>
+                    <p>OFFICIAL VISITORS' GUIDE</p>
+                </div>
+                <div class="f2">
+                    <p>CORPORATE INFORMATION</p>
+                    <p>TRAVELERS WITH DISABILITIES</p>
+                    <p>LGBTQ+</p>
+                    <p>TRAVEL TIPS</p>
+                </div>
+            </div>
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <div class="input">
+                    <input type="email" id="email" placeholder="enter your email">
+                    <button type="submit">sign up</button>
+                </div>
+            </form>
+            <hr class="l2" >
+            <p id="l">© 2023 Hawai'i Tourism Authority</p>
+            <div class="fl">
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>Terms & Policy</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "gauravchudasama333@gmail.com",
+            Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+            To : 'gauravchudasama333@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "new subscription",
+            Body : "Email: " + document.getElementById('email').value
+                +"<br> Has Subscribed"
+            }).then(
+                message => alert("Thank you for subscribing")
+            );
+        }
+        // const submit = document.getElementsByClassName('email');
+        // submit.addEventListener('submit', (e)=>{
+        //         e.preventDefault();
+        //         console.log("clicked");
+        //         Email.send({
+        //             SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
+        //             To : 'gauravchudasama333@gmail.com',
+        //             From : document.getElementById('email').value,
+        //             Subject : "New Subscription",
+        //             Body : "And this is the body"
+        //             }).then(
+        //             message => alert(message)
+        //         );
+        // })
+    
+    </script>
+    </div>
+    
+</body>
+</html>

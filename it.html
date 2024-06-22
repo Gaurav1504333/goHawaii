@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="it.css">
+    <link rel = "icon" href = "logoh.png" type = "image/x-icon"> 
+    <title>International Travelers</title>
+</head>
+<body bgcolor="black">
+    <navbar id="navbar">
+        <!-- <ul>
+            <li><a href="#" onclick="togglemenu()" onmouseover="togglemenu()" onmouseout="menuout()" >Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()" onmouseover="togglemenu2()" onmouseout="menuout2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()" onmouseover="togglemenu3()" onmouseout="menuout3()">Culture</a></li>
+        </ul> -->
+        <ul>
+            <li><a href="#" onclick="togglemenu()">Islands</a></li>
+            <li><a href="#" onclick="togglemenu2()">Experiences</a></li>
+            <li><a href="#" onclick="togglemenu3()">Culture</a></li>
+        </ul>
+        <div class="logo">
+            <img src="logo.png" alt="home">
+        </div>
+        <ul>
+            <li><a href="#" onclick="togglemenu4()">Must know</a></li>
+            <li><a href="index.html">Plan your trip</a></li>
+            <!-- <div class="search">
+                <img src="search.png" alt="">
+            </div> -->
+        </ul>
+        <div class="sub-menu-wrap" id="sm">
+            <div class="sub-menu" >
+                <div class="sm" >
+                    <a href="" class="sml" id="top">Island Overview</a>
+                    <a href="subk.html" class="sml">Kaua'i</a>
+                    <a href="subo.html" class="sml">O'ahu</a>
+                    <a href="subm.html" class="sml">Moloka'I</a>
+                    <a href="subl.html" class="sml">Lana'i</a>
+                    <a href="submaui.html" class="sml">Maui</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap2" id="sm2">
+            <div class="sub-menu2">
+                <div class="sm2" >
+                    <a href="family.html" class="sm2" id="top">Experiences overview</a>
+                    <a href="family.html" class="sm2">Adventure</a>
+                    <a href="family.html" class="sm2">Culinary</a>
+                    <a href="family.html" class="sm2">Eco-Tourism</a>
+                    <a href="family.html" class="sm2">Family fun</a>
+                    <a href="family.html" class="sm2">Golf</a>
+                    <a href="family.html" class="sm2">Golf</a>
+                    <a href="family.html" class="sm2">Heritage Sites</a>
+                    <a href="family.html" class="sm2">Relaxation & Romance</a>
+                    <a href="family.html" class="sm2">Sightseeing</a>
+                    <a href="family.html" class="sm2">Voluntourism</a>
+                    <a href="family.html" class="sm2">Wedding & Honeymoon</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap3" id="sm3">
+            <div class="sub-menu3">
+                <div class="sm3">
+                    <a href="culture.html" class="sm3" id="top">Culture overview</a>
+                    <a href="culture.html" class="sm3">History</a>
+                    <a href="culture.html" class="sm3">Traditions</a>
+                    <a href="culture.html" class="sm3">Hula</a>
+                    <a href="culture.html" class="sm3">Music</a>
+                    <a href="culture.html" class="sm3">Luau</a>
+                    <a href="culture.html" class="sm3">Hawaiian Launguage</a>
+                    <a href="culture.html" class="sm3">Art</a>
+                    <a href="culture.html" class="sm3">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-wrap4" id="sm4">
+            <div class="sub-menu4">
+                <div class="sm4">
+                    <a href="palnning.html" class="sm4" id="top">Planning overview</a>
+                    <a href="safety.html" class="sm4">Safety</a>
+                    <a href="traveltips.html" class="sm4">Travel Tips</a>
+                    <a href="palnning.html" class="sm4">Special Alert/Notices</a>
+                    <a href="weather.html" class="sm4">Weather</a>
+                    <a href="faq.html" class="sm4">FAQ</a>
+                    <a href="it.html" class="sm4">International Travelers</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                let nb= document.querySelector("navbar");
+                nb.classList.toggle("sticky" , window.scrollY > 0);
+            })
+        </script>
+    </navbar>
+    <script>
+        let sm = document.getElementById("sm");
+        let sm2 = document.getElementById("sm2");
+        let sm3 = document.getElementById("sm3");
+
+
+        function togglemenu(){
+            sm.classList.toggle("om");
+        }
+        function togglemenu2(){
+            sm2.classList.toggle("om2");
+        }
+        function togglemenu3(){
+            sm3.classList.toggle("om3");
+        }
+        function togglemenu4(){
+            sm4.classList.toggle("om4");
+        }
+    </script>
+
+
+    <div class="home">
+        <div class="wrap">
+            <div class="content">
+                <h1>​International Travelers</h1>
+                <p>The documents required for entering Hawaiʻi are different for citizens of countries 
+                    outside of the United States. Here is a look at the documentation you will need, entry 
+                    information specific to Canadian citizens and helpful information about Hawaiʻi’s 
+                    currency.
+                </p>
+                <h2>Visa & Customs</h2>
+                <p>
+                    All international visitors, regardless of country of origin, must present a valid 
+                    passport or secure document when entering the United States, including Hawaiʻi. 
+                    Travel.State.gov is an excellent resource for in-depth information on types of visitor 
+                    visas. For more specific information on entering U.S. borders, please review the U.S. 
+                    Department of Homeland Security’s website.
+                </p>
+                <h2>Visa Waiver Program</h2>
+                <p>The Visa Waiver Program enables nationals of 38 participating countries to travel to 
+                    the United States for tourism or business (visitor [B] visa purposes only) for stays 
+                    of 90 days or less without obtaining a visa. All travelers entering under this program 
+                    are required to have a valid authorization through the Electronic System for Travel 
+                    Authorization (ESTA) prior to travel.
+                </p>
+                <h2>Customs Information</h2>
+                <p>While you are on the plane to Hawaiʻi, make sure you receive and complete the 
+                    following forms. Each form must be completed on both sides in English, using black 
+                    or blue ink.
+                    <div class="tips">
+                        <br>1. Customs Declaration Form. This form is required from all arriving passengers 
+                        and crew, even if you have nothing to declare. One customs form may cover 
+                        multiple persons as long as they are from the same household. Any type of dutiable 
+                        good, food, plant or animal product must be declared. If you and your travel 
+                        companions together are carrying $10,000 or more in cash or other negotiable 
+                        instruments such as endorsed checks, you must declare it upon arrival. If you do not,
+                        it is subject to forfeiture. Your money is not subject to taxation or duty.
+                        <br>2. Immigration Form. An immigration form is required from all non-U.S. 
+                        citizens with the exception of permanent U.S. residents and Canadian citizens.
+                    </div>
+                </p>
+                <h2>Information for Canadian Citizens</h2>
+                <p>
+                    The most important formality on entering the United States is providing proof of your 
+                    Canadian citizenship. Your Canadian passport is the best document for this, but review 
+                    the complete list of documents and requirements below.
+                </p>
+                <p>By Air</p>
+                <p>
+                    When arriving in Hawaiʻi by air, all Canadian citizens (including children) are required
+                    to produce a passport or NEXUS card, valid for the duration of their stay. Temporary 
+                    passport holders may be subject to different entry requirements. Check with diplomatic 
+                    representatives for up-to-date information. Official (special and diplomatic) passport 
+                    holders must consult the Official Travel page, as they may be subject to different entry 
+                    requirements.More detailed information is available on the Canada Border Services Agency 
+                    (CBSA) and the U.S. Customs and Border Protection (CBP) websites.
+                </p>
+                <p>By Water (Cruise)</p>
+                <p>
+                    As per the Western Hemisphere Travel Initiative (WHTI), Canadian citizens aged 16 and 
+                    over must present one of the following documents when entering the U.S. by land or water:
+                    <div class="tips">
+                        <br>1. Passport
+                        <br>2. NEXUS card
+                        <br>3. Free and Secure Trade (FAST) card
+                        <br>4. Enhanced driver’s license (EDL) or enhanced identification card (EIC) from a 
+                        province or territory where a U.S.-approved EDL/EIC program has been implemented
+                        <br>5. Secure Certificate of Indian Status
+                    </div>
+                </p>
+                <p>
+                    The WHTI-compliant document you choose to use must be valid for the duration of your 
+                    stay in the United States. Canadian citizens aged 15 and under entering the U.S. by 
+                    land or water require proof of citizenship, such as a passport, an original or a copy 
+                    of a birth certificate or an original Canadian citizenship card. Canadian citizens aged 
+                    18 and under who are traveling with a school or other organized group under adult 
+                    supervision with written parental/guardian consent must also present proof of 
+                    citizenship such as a birth certificate or passport. For more information, consult 
+                    the CBP website.
+                    <br>For additional information on utilizing a Secure Certificate of Indian Status as 
+                    your entry identification, please visit Citizenship and Immigration Services (USCIS) 
+                    and Indigenous and Northern Affairs Canada. Canadians who are permanent residents of 
+                    the U.S. must comply with special entry requirements. For more information, consult 
+                    the CBP website.
+                </p>
+                <p>Visas</p>
+                <p>
+                    Canadian citizens generally do not require a visa to enter the United States 
+                    directly from Canada for the purposes of visiting or studying.
+                </p>
+                <p>Length of Stay</p>
+                <p>
+                    Canadians, including “snowbirds” who winter in the U.S., are generally granted a stay 
+                    for up to six months at the time of entry. The length of stay is determined at the 
+                    port of entry by a Customs and Border Patrol (CBP) officer and is based on the purpose 
+                    of travel at the time of initial entry. If you wish to stay longer you must apply for 
+                    an extension with the nearest office of USCIS once you are in the U.S. and before the 
+                    expiry of your initial authorized stay. You may be asked to demonstrate that you are 
+                    only visiting the U.S. temporarily.
+                </p>
+                <p>Dual Citizenship</p>
+                <p>Some Canadians may have U.S. as well as Canadian citizenship through birth in the U.S. 
+                    or through naturalization or descent. Under the Western Hemisphere Travel Initiative, 
+                    citizens are required to present a valid U.S. passport to enter or re-enter the U.S. 
+                    by air. Although U.S. authorities do not formally require dual nationals to carry both 
+                    a U.S. and a Canadian passport, carrying both documents as proof of citizenship may 
+                    facilitate both entry into the U.S. and return to Canada. For more information, consult 
+                    the Dual Citizenship section of the Travel.State.gov website of the U.S. Department of 
+                    State, as well as the Laws and Culture tab.
+                </p>
+                <h2>Currency</h2>
+                <p>
+                    Hawaiʻi uses the United States Dollar as its currency. Exchanging money in Hawaiʻi is 
+                    as simple as using an ATM (automated teller machine), however, it’s helpful to exchange 
+                    some of your currency before you travel so you’ll have money for cab fare and other 
+                    incidentals.
+                    <br>Recently, U.S. currency has been reissued with new safety features, so there are 
+                    many different varieties of bills and coins in circulation. U.S. paper bills come in $1, 
+                    $5, $10, $20, $50 and $100 denominations. Please note that some small stores and fast food 
+                    outlets in Hawaiʻi will not accept bills over $20.
+                    <br>U.S. coins include the penny (one cent), nickel (five cents), dime (10 cents) and 
+                    quarter (25 cents). There are also $1 coins, but they are not used very often, and can 
+                    be easily mistaken for quarters.
+                </p>
+                <h2>What Can I Take Home?</h2>
+                <p>
+                    Protecting ecosystems and agriculture goes two ways.
+                </p>
+                <p>
+                    Before you return home, take a few minutes to check your country's return policies. 
+                    Some of Hawaiʻi's plants, foods and products may not be accepted. We want you to have 
+                    an enjoyable stay and be able take home your mementos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="divp7">
+        <section id="page7">
+            <div class="footer">
+                <div id="ptag">
+                    <p>Download Our App</p>
+                </div>
+                <div id="as">
+                    <img src="appstore.png" alt="appstore">
+                </div>
+                <div id="ps">
+                    <img src="playstore.png" alt="playstore">
+                </div>
+            </div>
+            <div class="f">
+                <div class="f1">
+                    <p>MEETINGS & CONVENTIONS</p>
+                    <p>TRAVEL TRADE</p>
+                    <p>MEDIA</p>
+                    <p>EVENTS & FESTIVALS </p>
+                    <p>OFFICIAL VISITORS' GUIDE</p>
+                </div>
+                <div class="f2">
+                    <p>CORPORATE INFORMATION</p>
+                    <p>TRAVELERS WITH DISABILITIES</p>
+                    <p>LGBTQ+</p>
+                    <p>TRAVEL TIPS</p>
+                </div>
+            </div>
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <div class="input">
+                    <input type="email" id="email" placeholder="enter your email">
+                    <button type="submit">sign up</button>
+                </div>
+            </form>
+            <hr class="l2" >
+            <p id="l">© 2023 Hawai'i Tourism Authority</p>
+            <div class="fl">
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>Terms & Policy</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "gauravchudasama333@gmail.com",
+            Password : "8BC6070B0EDDCB13A9B7C1D4F338D4B0B21E",
+            To : 'gauravchudasama333@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "new subscription",
+            Body : "Email: " + document.getElementById('email').value
+                +"<br> Has Subscribed"
+            }).then(
+                message => alert("Thank you for subscribing")
+            );
+        }
+        // const submit = document.getElementsByClassName('email');
+        // submit.addEventListener('submit', (e)=>{
+        //         e.preventDefault();
+        //         console.log("clicked");
+        //         Email.send({
+        //             SecureToken : "7c036180-ae6d-47fd-b317-59752058c9e0",
+        //             To : 'gauravchudasama333@gmail.com',
+        //             From : document.getElementById('email').value,
+        //             Subject : "New Subscription",
+        //             Body : "And this is the body"
+        //             }).then(
+        //             message => alert(message)
+        //         );
+        // })
+    
+    </script>
+    </div>
+    
+</body>
+</html>
