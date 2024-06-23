@@ -693,6 +693,9 @@
     cursor: pointer;
     z-index:2;
 } 
+button{
+    border:0px !important;
+}
 #cp5 button:hover{
     background-color: rgb(255, 255, 255);
     color: black;
@@ -796,6 +799,7 @@
     font-family: oscsb;
     padding: 0px 4px 0px 4px;
     cursor: pointer;
+    border-radius: 4px;
 }
 #i button a{
     text-decoration: none;

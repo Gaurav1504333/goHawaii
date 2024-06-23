@@ -372,6 +372,9 @@
     right: 16px !important;
     color: black;
 }
+button{
+    border:0px !important;
+}
 .gallery .box1 .hotel1h4{
     text-align:center;
     font-family:displace;
@@ -398,6 +401,7 @@
     font-family: oscsb;
     padding: 0px 4px 0px 4px;
     cursor: pointer;
+    border-radius: 4px;
 }
 .gallery .box1 button a{
     text-decoration: none;
